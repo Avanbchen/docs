@@ -53,7 +53,7 @@ nav:
         - 通用功能: user_manual/general.md
         - 首页: user_manual/homepage.md
         - 数据源: user_manual/datasource_configuration.md
-        - 数据集: user_manual/dataset_configuration.md
+        - 数据集: user_manual/dataset_database.md
         - 视图: user_manual/view_generation.md
         - 仪表板: user_manual/dashboard_generation.md
         - 移动端: user_manual/app.md
