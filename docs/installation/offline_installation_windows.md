@@ -1,4 +1,4 @@
-## 环境要求
+## 1 环境要求
 
 !!! Abstract ""
 	得益于 Docker 跨平台应用，DataEase 理论上可以部署在任何可以运行 Docker 的宿主机。  
@@ -18,7 +18,9 @@
     * CPU/内存: 4核8G
     * 磁盘空间: 200G
 
-## 安装 WSL
+## 2 安装部署
+
+### 2.1 安装 WSL
 
 !!! Abstract ""
 	参考[在 Windows 10 上安装 WSL | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows/wsl/install)此问题，进行 Windows 宿主机的配置。  
@@ -33,7 +35,7 @@
 
 	下载[适用于 x64 计算机的 WSL2 Linux 内核更新包](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 
-## 设置 WSL2 为默认
+### 2.2 设置 WSL2 为默认
 
 !!! Abstract ""
 	**以管理员身份执行：**
@@ -42,7 +44,7 @@
 	wsl --set-default-version 2
 	```
 
-## 安装 Ubuntu
+### 2.3 安装 Ubuntu
 
 !!! Abstract ""
 	在 Windows 10 的应用商店里搜索"Ubuntu"并安装
@@ -51,7 +53,7 @@
 
 
 
-## 检测 Ubuntu WSL 版本
+### 2.4 检测 Ubuntu WSL 版本
 
 !!! Abstract ""
 	以管理员身份执行：
@@ -72,7 +74,7 @@
 ![WSL版本2](../img/installation/check-version-2.png)
 
 
-## 安装 Docker
+### 2.5 安装 Docker
 
 !!! Abstract ""
 	下载[Docker Desktop for Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)，如果使用的是 macOS，[Install Docker Desktop on Mac | Docker Documentation](https://docs.docker.com/desktop/mac/install/) 。 
@@ -80,7 +82,7 @@
 	安装完成后双击 Docker Desktop Installer.exe 安装即可完成安装。
 
 
-## Docker 设置
+### 2.6 Docker 设置
 
 !!! Abstract ""
 	Docker Desktop 安装完成后，进入 Settings 界面，选择 Resources 菜单下的 WSL INTEGRATION，按下图设置后，点击右下角的 Apply & Restart 即可。
@@ -88,7 +90,7 @@
 ![docker设置](../img/installation/docker-settings.png){width="950px""}
 
 
-## 下载安装包
+### 2.7 下载安装包
 
 !!! Abstract ""
 	请自行下载 DataEase 最新版本的离线安装包(v1.2.3及以上版本)  
@@ -96,7 +98,7 @@
     安装包下载链接: https://community.fit2cloud.com/#/products/dataease/downloads
 
 
-## 启动 Ubuntu
+### 2.8 启动 Ubuntu
 
 !!! Abstract ""
 	在应用商店里，选择 Ubuntu，点击"启动"按钮启动 Ubuntu，并执行命令切换到 root 用户：
@@ -108,7 +110,7 @@
 ![启动Ubuntu](../img/installation/launch-ubuntu.png)
 
 
-## 检查 docker 环境
+### 2.9 检查 docker 环境
 
 !!! Abstract ""
 	在 Ubuntu 命令行中执行命令：
@@ -121,7 +123,7 @@
 ![docker检测](../img/installation/check-docker.png)
 
 
-## 解压安装包
+### 2.10 解压安装包
 
 !!! Abstract ""
 	在 Ubuntu 中，以 root 用户执行如下命令：
@@ -133,7 +135,7 @@
 	tar zxvf dataease-v1.5.0-offline.tar.gz
 	```
 
-## 设置安装参数（可选）
+### 2.11 设置安装参数（可选）
 
 !!! Abstract ""
 	DataEase v1.5.0 版本支持以配置文件的形式来设置安装参数，如安装目录、服务运行端口、数据库配置参数等，具体参数请参见安装包中的 install.conf 文件：
@@ -187,7 +189,7 @@
 	DE_CARTE_PASSWORD=cluster
 	```
 
-## 执行安装脚本
+### 2.12 执行安装脚本
 
 !!! Abstract ""
 	```sh
@@ -271,7 +273,7 @@
 ![安装DataEase](../img/installation/windows-install.png)
 
 
-## 其他注意事项
+## 3 其他注意事项
 
 !!! Abstract ""
 	注意：内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，如果使用了外部 MySQL 或者修改了内置 MySQL 的容器名称的话，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。

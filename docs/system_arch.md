@@ -1,8 +1,8 @@
-## 整体架构
+## 1 整体架构
 
 ![整体架构](./img/system-arch.png){ width="1235" }
 
-## 组件说明
+## 2 组件说明
 
 !!! Abstract ""
     - **[Frontend](https://github.com/dataease/dataease/tree/main/frontend)**: DataEase 的前端工程, 基于 Vue.js 进行开发
@@ -14,7 +14,7 @@
 各个组件间的关系可参考下图  
 ![组件说明](./img/components.png)
 
-## 关键术语
+## 3 关键术语
 
 !!! Abstract "DataEase 中有一些基本概念，下面是这些基本概念的说明。"
     - **数据源**: 用来管理各类数据源连接信息，是后续数据分析操作中数据的来源
@@ -23,7 +23,7 @@
     - **仪表板**: 通过可视化效果展示具体数据常见的图形面板
     - **模板**: 可用来快速构建仪表板的数据及样式模板
     
-## 技术栈
+## 4 技术栈
 
 !!! Abstract ""
     - 后端：[Spring Boot](https://spring.io/projects/spring-boot)
