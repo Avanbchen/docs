@@ -41,19 +41,34 @@ theme:
     custom_dir: "theme"
 nav:
     - 产品介绍: index.md
+    - 更新说明: changelog.md
     - 系统架构: system_arch.md
-    - 安装部署: 
-        - 在线安装: installation/online_installation.md
-        - 离线安装: installation/offline_installation.md
-        - 离线安装(Windows): installation/offline_installation_windows.md
-        - 在线升级: installation/online_upgrade.md
-        - 离线升级: installation/offline_upgrade.md
+    - 安装部署:
+        - Windows:
+            - 离线安装: installation/offline_installation_windows.md
+        - Linux:
+            - 在线安装: installation/online_installation.md
+            - 离线安装: installation/offline_installation.md
+            - 在线升级: installation/online_upgrade.md
+            - 离线升级: installation/offline_upgrade.md
         - 命令行工具: installation/cli.md
-    - 用户手册:
+    - 功能手册:
         - 通用功能: user_manual/general.md
         - 首页: user_manual/homepage.md
-        - 数据源: user_manual/datasource_configuration.md
-        - 数据集: user_manual/dataset_database.md
+        - 数据源:
+            - 数据源概述: user_manual/datasource_description.md
+            - 配置数据库数据源: user_manual/datasource_configuration.md
+            - 配置 API 数据源: user_manual/datasource_configuration_api.md
+        - 数据集:
+            - 数据集概述: user_manual/dataset_description.md
+            - 添加数据集:
+                - 数据库数据集: user_manual/dataset_configuration/dataset_database.md
+                - SQL 数据集: user_manual/dataset_configuration/dataset_SQL.md
+                - Excel 数据集: user_manual/dataset_configuration/dataset_Excel.md
+                - 自定义数据集: user_manual/dataset_configuration/dataset_definision.md
+                - 关联数据集: user_manual/dataset_configuration/dataset_connection.md
+                - API 数据集: user_manual/dataset_configuration/dataset_api.md
+            - 数据集功能设计: user_manual/dataset_design.md
         - 视图: user_manual/view_generation.md
         - 仪表板: user_manual/dashboard_generation.md
         - 移动端: user_manual/app.md

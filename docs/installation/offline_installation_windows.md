@@ -110,7 +110,7 @@
 ![启动Ubuntu](../img/installation/launch-ubuntu.png)
 
 
-### 2.9 检查 docker 环境
+### 2.9 检查 Docker 环境
 
 !!! Abstract ""
 	在 Ubuntu 命令行中执行命令：

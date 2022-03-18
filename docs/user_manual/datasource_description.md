@@ -8,8 +8,8 @@
 ## 2 支持的数据源类型
 
 !!! Abstract ""
-    **数据仓库/数据湖：AWS RedShift**
-    **OLTP：MySQL、MongoDB、Sql Server、Oracle、PostgreSQL、MariaDB、DB2**
-    **OLAP：Hive、Elasticsearch、ClickHouse、Doris**
-    **数据文件：Excel**
-    **API数据源**
+    - 数据仓库/数据湖：AWS RedShift
+    - OLTP：MySQL、MongoDB、Sql Server、Oracle、PostgreSQL、MariaDB、DB2
+    - OLAP：Hive、Elasticsearch、ClickHouse、Doris
+    - 数据文件：Excel
+    - API数据源
