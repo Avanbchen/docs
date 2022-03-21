@@ -69,8 +69,14 @@ nav:
                 - 关联数据集: user_manual/dataset_configuration/dataset_connection.md
                 - API 数据集: user_manual/dataset_configuration/dataset_api.md
             - 数据集功能设计: user_manual/dataset_design.md
-        - 视图: user_manual/view_generation.md
-        - 仪表板: user_manual/dashboard_generation.md
+        - 仪表板:
+            - 仪表板概述: user_manual/dashboard_description.md
+            - 创建仪表板: user_manual/dashboard_generation.md
+            - 仪表板基础功能: user_manual/dashboard_basicfunctions.md
+            - 视图组件:
+                - 视图概述: user_manual/view_generation.md
+                - 视图: user_manual/view_design.md
+                - 视图图库: user_manual/view_gallery.md
         - 移动端: user_manual/app.md
         - 系统管理:
             - 用户管理: user_manual/system_management/user.md
