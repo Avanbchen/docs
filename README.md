@@ -30,7 +30,7 @@ nav:
         - 数据源: user_manual/datasource_configuration.md
         - 数据集: user_manual/dataset_database.md
         - 视图: user_manual/view_generation.md
-        - 仪表板: user_manual/dashboard_generation.md
+        - 仪表板: user_manual/dashboard_create.md
         - 系统管理:
             - 用户管理: user_manual/system_management/user.md
             - 模版管理: user_manual/system_management/module.md
