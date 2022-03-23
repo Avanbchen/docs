@@ -78,13 +78,21 @@ nav:
                 - 视图功能设计: user_manual/view_module/view_design.md
                 - 视图图库: user_manual/view_module/view_gallery.md
             - 过滤组件:
-                  - 时间过滤组件: user_manual/filter_module/time_filtermodule.md
-        - 移动端: user_manual/app.md
+                - 时间过滤组件: user_manual/filter_module/filtertime_module.md
+                - 文本过滤组件: user_manual/filter_module/filtertext_module.md
+                - 数字过滤组件: user_manual/filter_module/filternumber_module.md
+            - 其他组件:
+                - 样式组件: user_manual/other_module/style_module.md
+                - 多媒体组件: user_manual/other_module/multimedia_module.md
+                - 其他组件: user_manual/other_module/other_module.md
+            - 组件基础功能: user_manual/module_basicfunctions.md
+            - 仪表板使用: user_manual/dashboard_using.md
         - 系统管理:
             - 用户管理: user_manual/system_management/user.md
             - 模版管理: user_manual/system_management/module.md
             - 站内消息: user_manual/system_management/message.md
             - 定时任务: user_manual/system_management/task.md
+        - 移动端: user_manual/app.md
     - 使用教程:
         - 仪表板制作示例:
             - 制作【销售仪表板】: manual_demo/dashboard_flow/sales_dashboard.md
