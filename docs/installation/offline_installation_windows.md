@@ -129,10 +129,10 @@
 	在 Ubuntu 中，以 root 用户执行如下命令：
 
 	```sh
-	# 假设安装包存放路径为 c:\dataease-v1.5.0-offline.tar.gz
+	# 假设安装包存放路径为 c:\dataease-v1.8.0-offline.tar.gz
 	cd /mnt/c
 	# 解压安装包
-	tar zxvf dataease-v1.5.0-offline.tar.gz
+	tar zxvf dataease-v1.8.0-offline.tar.gz
 	```
 
 ### 2.11 设置安装参数（可选）

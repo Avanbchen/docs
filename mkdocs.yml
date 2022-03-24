@@ -92,7 +92,9 @@ nav:
             - 模版管理: user_manual/system_management/module.md
             - 站内消息: user_manual/system_management/message.md
             - 定时任务: user_manual/system_management/task.md
-        - 移动端: user_manual/app.md
+        - 移动端:
+            - 移动端概述: user_manual/app_description.md
+            - 移动端布局: user_manual/app_design.md
     - 使用教程:
         - 仪表板制作示例:
             - 制作【销售仪表板】: manual_demo/dashboard_flow/sales_dashboard.md
