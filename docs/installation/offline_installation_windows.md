@@ -14,7 +14,7 @@
 !!! Abstract ""
 	**部署服务器要求：**  
 
-    * 操作系统: 可运行 docker 的 windows 操作系统
+    * 操作系统: 可运行 Docker 的 Windows 操作系统
     * CPU/内存: 4核8G
     * 磁盘空间: 200G
 
@@ -49,7 +49,7 @@
 !!! Abstract ""
 	在 Windows 10 的应用商店里搜索"Ubuntu"并安装
 
-![安装Ubuntu](../img/installation/windows-install-ubuntu.png){width="950px""}
+![安装Ubuntu](../img/installation/windows-install-ubuntu.png){ width="900" }
 
 
 
@@ -61,7 +61,7 @@
 	wsl.exe -l -v
 	```
 
-![WSL版本1](../img/installation/check-version-1.png)
+![WSL版本1](../img/installation/check-version-1.png){ width="900" }
 
 !!! Abstract ""
 	示例中安装的 Ubuntu Name 为 "Ubuntu"， 如像上图出现 Ubuntu 版本为 1， 则继续执行命令：
@@ -71,7 +71,7 @@
 
 	出现下图结果即为成功:
 
-![WSL版本2](../img/installation/check-version-2.png)
+![WSL版本2](../img/installation/check-version-2.png){ width="900" }
 
 
 ### 2.5 安装 Docker
@@ -87,7 +87,7 @@
 !!! Abstract ""
 	Docker Desktop 安装完成后，进入 Settings 界面，选择 Resources 菜单下的 WSL INTEGRATION，按下图设置后，点击右下角的 Apply & Restart 即可。
 
-![docker设置](../img/installation/docker-settings.png){width="950px""}
+![docker设置](../img/installation/docker-settings.png){ width="900" }
 
 
 ### 2.7 下载安装包
@@ -129,10 +129,10 @@
 	在 Ubuntu 中，以 root 用户执行如下命令：
 
 	```sh
-	# 假设安装包存放路径为 c:\dataease-v1.8.0-offline.tar.gz
+	# 假设安装包存放路径为 c:\dataease-v1.5.0-offline.tar.gz
 	cd /mnt/c
 	# 解压安装包
-	tar zxvf dataease-v1.8.0-offline.tar.gz
+	tar zxvf dataease-v1.5.0-offline.tar.gz
 	```
 
 ### 2.11 设置安装参数（可选）
@@ -278,4 +278,4 @@
 !!! Abstract ""
 	注意：内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，如果使用了外部 MySQL 或者修改了内置 MySQL 的容器名称的话，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。
 
-![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png)
+![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png){ width="900" }
