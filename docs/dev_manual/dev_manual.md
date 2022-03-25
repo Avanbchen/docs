@@ -19,13 +19,14 @@
 === "前端"
     !!! Abstract ""
         DataEase 前端使用了 Vue.js 作为前端框架，ElementUI 作为 UI 框架，并使用 npm 作为包管理工具。开发者请先下载 Node.js 作为运行环境，IDEA 用户建议安装 Vue.js 插件，便于开发
-
-!!! Abstract "安装 npm"
+=== "安装 npm"
+!!! Abstract ""
     进入网站 https://nodejs.org/en/download/， 选择相应的安装包进行安装即可。
 
 ### 2.2 初始化配置
 
-!!! Abstract "数据库初始化"
+=== "数据库初始化"
+!!! Abstract ""
     DataEase 使用 MySQL 数据库，推荐使用 MySQL 5.7 版本。同时 DataEase 对数据库部分配置项有要求，请参考下附的数据库配置，修改开发环境中的数据库配置文件（以下配置有部分参数可能并不适用 MySQL 8.x 版本）
 
     ```
@@ -54,8 +55,8 @@
     ```mysql
     CREATE DATABASE `dataease` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
     ```
-
-!!! Abstract "配置文件"
+=== "配置文件"
+!!! Abstract ""
     DataEase 会默认加载该路径下的配置文件 /opt/dataease/conf/dataease.properties，请参考下列配置创建对应目录及配置文件
 
     ```properties
@@ -83,37 +84,43 @@
     
     logger.level=INFO
     ```
-
-!!! Abstract "地图文件"
+=== "地图文件"
+!!! Abstract ""
     DataEase 从 1.2 版本开始支持地图组件。在 DataEase 源码工程的目录下有一个地图文件目录 mapFiles/full，需要将该目录下的文件放置到 /opt/dataease/data/feature/full 目录下。如果是 Windows 的话，可以在工程目录所在盘的根目录下，创建 opt/dataease/data/feature/full 目录。
 
 ## 3 代码运行
 
 ### 3.1 IDEA 方式运行
 
-!!! Warning "Windows 下环境配置（可选）"
+=== "Windows 下环境配置（可选）"
+!!! Abstract ""
     在 windows 环境下对配置文件的路径会有所要求，一般可以采用下面两种配置方案里的一种，非 Windows 环境以下方案可跳过。
 
-!!! Abstract "方案一(推荐)"
+=== "方案一(推荐)"
+!!! Abstract ""
     将配置文件放置到工程源码的所在盘的指定路径下，以 dataease.properties 配置文件举例，如源码工程在 D 盘下，则配置文件存放路径为 d:\opt\dataease\conf\dataease.properties。其他配置文件类似。  
     此方案中不需要对 DataEase 的源码进行任何修改。
 ![方案一](../img/dev_manual/windows-idea-1.png){width="800px"}  
 
-!!! Abstract "方案二"
+=== "方案二"
+!!! Abstract ""
     配置文件可以随意放置在任意路径下，但需要修改工程源码中配置文件的路径信息。以 dataease.properties 配置文件举例，如该配置文件存放在 D 盘根目录下，则需要按下图修改三个地方的配置路径：
 ![方案二](../img/dev_manual/windows-idea-2.png){width="800px"}
 
-!!! Abstract "运行后端服务"
+=== "运行后端服务"
+!!! Abstract ""
     新建一个 git 项目 输入主工程 git 地址: git@github.com:dataease/dataease.git
 
 ![新建工程](../img/dev_manual/new-project.png){width="800px"}  
 
-!!! Abstract "配置 maven"
+=== "配置 maven"
+!!! Abstract ""
     配置 maven 并引入 pom.xml
 ![引入pom-1](../img/dev_manual/import-pom1.png){width="800px"}
 ![引入pom-2](../img/dev_manual/import-pom2.png){width="800px"}  
 
-!!! Abstract "启动后端"
+=== "启动后端"
+!!! Abstract ""
     两种启动方式：
 
     - 可以使用 io.dataease.Application 入口方法直接启动
@@ -121,7 +128,8 @@
 
 ![启动后端](../img/dev_manual/run-backend.png){width="800px"}
 
-!!! Abstract "运行前端服务"
+=== "运行前端服务"
+!!! Abstract ""
     进入工程目录下的子目录 frontend, 用npm i 安装前端依赖包  
     安装完成后，使用 npm run serve 命名启动前端,前端启动后即可通过 http://localhost:9528/ 地址访问
 ![安装前端](../img/dev_manual/install-frontend.png){width="800px"}
@@ -137,8 +145,8 @@
 
 ## 4 本地运行 Kettle 和 Doris (可选)
 
-!!! Warning "注意"
-    若需要调试 Excel 和定时同步模式数据集的话，需要此支持
+!!! Abstract ""
+    **注意：** 若需要调试 Excel 和定时同步模式数据集的话，需要此支持
 
 ### 4.1 准备运行环境
 

@@ -22,8 +22,8 @@
     - npm 运行（适用于开发场景）
     - nginx 运行（适用于稳定运行场景）
 
-!!! Abstract "方式一、npm 运行"
-	进入前端目录 frontend，修改 .env.development 文件中的 VUE_APP_BASE_API，将 IP 地址设置为本机 IP，后端默认运行端口为 8081:
+!!! Abstract ""
+	方式一 npm 运行：进入前端目录 frontend，修改 .env.development 文件中的 VUE_APP_BASE_API，将 IP 地址设置为本机 IP，后端默认运行端口为 8081:
 ![frontend-development-env](../../img/dev_manual/frontend-development-env.png){width="800px"}
 
 !!! Abstract ""
@@ -32,11 +32,11 @@
 	npm run serve
 	```
 
-!!! Warning "注意"
-	以 npm 方式运行前端，默认会运行在本地的 9528 端口上，通过浏览器访问 http://ip:9528 即可。
+!!! Abstract ""
+	**注意：** 以 npm 方式运行前端，默认会运行在本地的 9528 端口上，通过浏览器访问 http://ip:9528 即可。
 
-!!! Abstract "方式二、nginx 运行"
-	以 nginx、apache 等运行前端，则修改 .env.production 文件中的 VUE_APP_BASE_API，将 IP 地址设置为本机 IP，后端默认运行端口为 8081:
+!!! Abstract ""
+	方式二 nginx 运行：以 nginx、apache 等运行前端，则修改 .env.production 文件中的 VUE_APP_BASE_API，将 IP 地址设置为本机 IP，后端默认运行端口为 8081:
 ![frontend-production-env](../../img/dev_manual/frontend-production-env.png){width="800px"}
 
 !!! Abstract ""
@@ -69,9 +69,8 @@
 	}
 	```
 
-!!! Warning "注意"
-
-	nginx 默认以 nobody 用户身份运行，可能会遇到 403 的错误。可以授予 dist 目录访问权限，或者将 nginx 设置为 root 用户运行。
+!!! Abstract ""
+	**注意：** nginx 默认以 nobody 用户身份运行，可能会遇到 403 的错误。可以授予 dist 目录访问权限，或者将 nginx 设置为 root 用户运行。
 
 ### 1.3 编译后端
 
@@ -85,8 +84,8 @@
 	mvn clean package
 	```
 
-!!! Warning "注意"
-	在编译后端代码时如遇到依赖无法下载的问题，可以在百度网盘上下载一下最小化的 dataease 依赖包。链接: https://pan.baidu.com/s/1fWv_ze-QKUew3ND4NAdt8Q 提取码: rpzi
+!!! Abstract ""
+	**注意：** 在编译后端代码时如遇到依赖无法下载的问题，可以在百度网盘上下载一下最小化的 dataease 依赖包。链接: https://pan.baidu.com/s/1fWv_ze-QKUew3ND4NAdt8Q 提取码: rpzi
 
 ### 1.4 运行后端
 

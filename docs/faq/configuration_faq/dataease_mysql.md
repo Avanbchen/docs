@@ -64,8 +64,8 @@
 ## 3 <span id="mysql-switch-ext">修改已安装的 DataEase 链接外部 MySQL</span>
 
 
-!!! Warning "外部 MySQL 配置参数要求"
-    特别注意，使用外部 MySQL 时，需要注意几个地方：
+!!! Abstract ""
+    **特别注意，使用外部 MySQL 时，需要注意几个地方：**
 
       - lower_case_table_names=1
       - group_concat_max_len=1024000
@@ -135,8 +135,8 @@
 
 ## 6 安装 DataEase 后内置 MySQL 的配置参数未生效
 
-!!! Warning "注意"
-    出于安全考虑，当 MySQL 配置文件 my.cnf 权限过高时，会被 MySQL 忽略加载。请确认配置文件目录(默认路径 /opt/dataease/conf)下的配置文件的访问权限为 644。
+!!! Abstract ""
+    **注意：** 出于安全考虑，当 MySQL 配置文件 my.cnf 权限过高时，会被 MySQL 忽略加载。请确认配置文件目录(默认路径 /opt/dataease/conf)下的配置文件的访问权限为 644。
 
 !!! Abstract ""
     可以通过命令修改文件权限：

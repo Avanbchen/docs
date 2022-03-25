@@ -15,7 +15,7 @@
 !!! Abstract ""
 	保留后台自动推送的未读消息，用户查阅对应消息后，消息自动从【未读消息】中移除。
 
-![未读消息](../../img/system_management/未读消息.png{ width="900px" }
+![未读消息](../../img/system_management/未读消息.png){ width="900px" }
 
 ## 4 已读消息
 

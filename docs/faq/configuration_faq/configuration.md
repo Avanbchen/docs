@@ -53,7 +53,7 @@
 
 ## 5 修改 DataEase 访问端口
 
-!!! Warning ""
+!!! Abstract ""
     当默认的访问端口 80 已被占用，如何修改为其它端口？
     
 
@@ -99,7 +99,7 @@
 
 ## 9 如何与 MeterSphere 安装在同一台服务器上？
 
-!!! Warning "注意"
+!!! Abstract ""
     DataEase 与 MeterSphere 安装在同一台服务器上时，有可能会发生以下冲突：
 
     - docker 网段冲突
