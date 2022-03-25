@@ -10,6 +10,6 @@
 !!! Abstract ""
     - **数据仓库/数据湖：** AWS RedShift
     - **OLTP 型数据库：** MySQL、MongoDB、SQL Server、Oracle、PostgreSQL、MariaDB、Db2
-    - **OLAP 型数据库：** Apache Hive、Elasticsearch、ClickHouse、Doris
+    - **OLAP 型数据库：** Apache Hive、Elasticsearch、ClickHouse、Apache Doris
     - **数据文件：** Excel
     - **API 数据源**

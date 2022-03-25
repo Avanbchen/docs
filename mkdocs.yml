@@ -75,6 +75,7 @@ nav:
             - 仪表板基础功能: user_manual/dashboard_basicfunctions.md
             - 视图组件:
                 - 视图概述: user_manual/view_module/view_generation.md
+                - 添加视图: user_manual/view_module/view_create.md
                 - 视图功能设计: user_manual/view_module/view_design.md
                 - 视图图库: user_manual/view_module/view_gallery.md
             - 过滤组件:
@@ -95,26 +96,27 @@ nav:
         - 移动端:
             - 移动端概述: user_manual/app_description.md
             - 移动端布局: user_manual/app_design.md
-    - 使用教程:
-        - 仪表板制作示例:
-            - 制作【销售仪表板】: manual_demo/dashboard_flow/sales_dashboard.md
-            - 制作【2021年全国GDP数据】: manual_demo/dashboard_flow/china_gdp_2021.md
-        - 使用进阶:
-            - 常见使用技巧【仪表板篇】: manual_demo/tips_dashboard.md
-            - 常见使用技巧【视图篇】: manual_demo/tips_view.md
-            - 计算字段使用篇: manual_demo/calculate_fields.md
     - 常见问题:
-        - 安装配置: faq/configuration_faq.md
+        - 安装配置:
+            - 安装配置相关: faq/configuration_faq/configuration.md
+            - 安装启动相关: faq/configuration_faq/installation_starts.md
+            - MySQL 相关: faq/configuration_faq/dataease_mysql.md
         - 备份还原: faq/backup_faq.md
         - 系统管理: faq/system_management.md
-        - 数据集: faq/dataset_faq.md
-        - 仪表板: faq/panel_faq.md
-        - 开发问题: faq/dev_faq.md
+        - 功能相关:
+            - 数据集: faq/dataset_faq.md
+            - 仪表板: faq/panel_faq.md
         - 安全问题: faq/security_faq.md
         - 企业版: faq/enterprise_faq.md
     - 开发文档: 
         - 开发环境搭建: dev_manual/dev_manual.md
-        - 源码部署（前后端分离）: dev_manual/dev_deployment.md
+        - 源码搭建（前后端分离）:
+            - 工具准备: dev_manual/dev_deployment/tool.md
+            - 环境准备: dev_manual/dev_deployment/enviroment.md
+            - 源码准备: dev_manual/dev_deployment/code.md
+            - 编译运行: dev_manual/dev_deployment/compile.md
+            - 注意事项: dev_manual/dev_deployment/attention.md
+        - 开发问题: faq/dev_faq.md
     - 技术咨询: https://jinshuju.net/f/e40eKK
     - 联系我们: contact.md
 

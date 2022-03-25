@@ -3,16 +3,16 @@
 !!! Abstract ""
     欢迎使用 DataEase，DataEase 是开源的数据可视化分析工具，帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase 支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便的与他人分享。
 
-![功能架构图](./img/index/DataEase功能架构图.jpg){ width="1235" }
+![功能架构图](./img/index/DataEase功能架构图.jpg){ width="1235px" }
 
 
 ## 1 界面展示
 
-![界面展示](./img/index/界面展示.gif){ width="1235" }
+![界面展示](./img/index/界面展示.gif){ width="1235px" }
 
 ## 2 示例仪表板
 
-![示例仪表板](./img/index/示例仪表板.gif){ width="1235" }
+![示例仪表板](./img/index/示例仪表板.gif){ width="1235px" }
 
 ## 3 产品优势
 
@@ -316,7 +316,7 @@
 			数据源管理
 		</td>
 		<td>
-			支持多种数据源，如：多sheet页 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB /AWS RedShift/ MariaDB / Doris / Hive 数据库 / DB2 / API 数据源
+			支持多种数据源，如：多sheet页 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB /AWS RedShift/ MariaDB /Apache Doris / Apache Hive / DB2 / API 数据源
 		</td>
 	</tr>
 	<tr>

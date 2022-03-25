@@ -1,6 +1,6 @@
 ## 1 整体架构
 
-![整体架构](./img/system-arch.png){ width="1235" }
+![整体架构](./img/system-arch.png){ width="1235px" }
 
 ## 2 组件说明
 
@@ -12,7 +12,7 @@
     - **[Apache Doris](https://github.com/apache/incubator-doris/)**: 用于提供实时数据分析能力
 
 各个组件间的关系可参考下图  
-![组件说明](./img/components.png)
+![组件说明](./img/components.png){ width="600px" }
 
 ## 3 关键术语
 

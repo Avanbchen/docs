@@ -1,4 +1,4 @@
-### 如何备份还原 DataEase？
+## 1 如何备份还原 DataEase？
 
 !!! Abstract ""
     DataEase安装后，相关文件的分布路径如下：

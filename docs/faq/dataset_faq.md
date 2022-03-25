@@ -1,6 +1,4 @@
-## Excel 数据集相关
-
-### 添加 Excel 数据集相关错误
+## 1 添加 Excel 数据集相关错误
 
 1.添加 Excel 数据集时出现 java.sql.SQLSyntaxErrorException: errCode = 2, detailMessage = The size of a row (1048587) exceed the maximal row size: 1000000
 
@@ -10,7 +8,7 @@
 
 2.创建 Excel 数据集或定时同步类型的数据集时，提示"Access denied for user 'root'(using password:YES)
 
-![doris错误](../img/faq/doris-invalid.png)
+![doris错误](../img/faq/doris-invalid.png){ width="900px" }
 
 !!! Abstract ""
     **上图的错误是由于 doris 的配置导致的，一般有两种可能：  

@@ -1,4 +1,4 @@
-## 编译 DataEase 项目源码的时候报错，提示缺少依赖。
+## 1 编译 DataEase 项目源码的时候报错，提示缺少依赖。
 
 !!! Warning "注意"
     在以源码方式运行 DataEase 时，推荐大家使用 v1.0、v1.1 等已发布分支的代码，main 和 dev 分支的代码均处于开发阶段，有些使用到的依赖由于没有达到稳定状态，并没有上传到中央仓库。
@@ -16,7 +16,7 @@
 
 ![plugins-dependency-2](../img/faq/plugins-dependency-2.png)
 
-## 使用地图组件时提示 "/geo/100000_full.json not found."
+## 2 使用地图组件时提示 "/geo/100000_full.json not found."
 
 !!! Abstract ""
     出现上述原因，是因为没有将地图文件放置到指定位置中。    

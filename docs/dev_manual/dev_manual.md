@@ -1,4 +1,4 @@
-## 项目结构
+## 1 项目结构
 
 ```
 .
@@ -10,8 +10,8 @@
 └── pom.xml                                         # 整体 maven 项目使用的 pom 文件
 ```
 
-## 配置开发环境
-### 1.环境准备
+## 2 配置开发环境
+### 2.1 环境准备
 
 === "后端"
     !!! Abstract ""
@@ -23,7 +23,7 @@
 !!! Abstract "安装 npm"
     进入网站 https://nodejs.org/en/download/， 选择相应的安装包进行安装即可。
 
-### 2.初始化配置
+### 2.2 初始化配置
 
 !!! Abstract "数据库初始化"
     DataEase 使用 MySQL 数据库，推荐使用 MySQL 5.7 版本。同时 DataEase 对数据库部分配置项有要求，请参考下附的数据库配置，修改开发环境中的数据库配置文件（以下配置有部分参数可能并不适用 MySQL 8.x 版本）
@@ -87,9 +87,9 @@
 !!! Abstract "地图文件"
     DataEase 从 1.2 版本开始支持地图组件。在 DataEase 源码工程的目录下有一个地图文件目录 mapFiles/full，需要将该目录下的文件放置到 /opt/dataease/data/feature/full 目录下。如果是 Windows 的话，可以在工程目录所在盘的根目录下，创建 opt/dataease/data/feature/full 目录。
 
-## 代码运行
+## 3 代码运行
 
-### 1.IDEA 方式运行
+### 3.1 IDEA 方式运行
 
 !!! Warning "Windows 下环境配置（可选）"
     在 windows 环境下对配置文件的路径会有所要求，一般可以采用下面两种配置方案里的一种，非 Windows 环境以下方案可跳过。
@@ -126,7 +126,7 @@
     安装完成后，使用 npm run serve 命名启动前端,前端启动后即可通过 http://localhost:9528/ 地址访问
 ![安装前端](../img/dev_manual/install-frontend.png){width="800px"}
 
-### 2.本地 jar 包方式运行
+### 3.2 本地 jar 包方式运行
 
 !!! Abstract ""
 
@@ -135,12 +135,12 @@
     3.编译完成后，在工程目录的 backend/target 目录下，会生成一个 backend-x.y.z.jar （xyz代表版本号，xyz具体值视具体版本而定） 的可运行 jar 包。可以通过 java -jar backend-x.y.z.jar 来运行 DataEase；  
     4.服务完全启动后，可以在本地浏览器访问 http://localhost:8081 来访问 DataEase 服务。
 
-## 本地运行 Kettle 和 Doris (可选)
+## 4 本地运行 Kettle 和 Doris (可选)
 
 !!! Warning "注意"
     若需要调试 Excel 和定时同步模式数据集的话，需要此支持
 
-### 1.准备运行环境
+### 4.1 准备运行环境
 
 !!! Abstract ""
     1. 下载 installer 工程
@@ -251,7 +251,7 @@
               gateway: 172.19.0.1
     ```
 
-### 2.运行 Kettle 和 Doris 组件
+### 4.2 运行 Kettle 和 Doris 组件
 
 !!! Abstract ""
     执行命令运行组件：
@@ -260,9 +260,9 @@
     docker-compose -f docker-compose-kettle-doris.yml up -d
     ```
 
-### 3.其他注意事项
+## 5 其他注意事项
 
 !!! Abstract ""
     内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，在源码运行的情况下，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。
 
-![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png){width="800px"}
+![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png){width="900px"}

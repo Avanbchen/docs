@@ -49,7 +49,7 @@
 !!! Abstract ""
 	在 Windows 10 的应用商店里搜索"Ubuntu"并安装
 
-![安装Ubuntu](../img/installation/windows-install-ubuntu.png){ width="900" }
+![安装Ubuntu](../img/installation/windows-install-ubuntu.png){ width="900px" }
 
 
 
@@ -61,7 +61,7 @@
 	wsl.exe -l -v
 	```
 
-![WSL版本1](../img/installation/check-version-1.png){ width="900" }
+![WSL版本1](../img/installation/check-version-1.png){ width="900px" }
 
 !!! Abstract ""
 	示例中安装的 Ubuntu Name 为 "Ubuntu"， 如像上图出现 Ubuntu 版本为 1， 则继续执行命令：
@@ -71,7 +71,7 @@
 
 	出现下图结果即为成功:
 
-![WSL版本2](../img/installation/check-version-2.png){ width="900" }
+![WSL版本2](../img/installation/check-version-2.png){ width="900px" }
 
 
 ### 2.5 安装 Docker
@@ -87,7 +87,7 @@
 !!! Abstract ""
 	Docker Desktop 安装完成后，进入 Settings 界面，选择 Resources 菜单下的 WSL INTEGRATION，按下图设置后，点击右下角的 Apply & Restart 即可。
 
-![docker设置](../img/installation/docker-settings.png){ width="900" }
+![docker设置](../img/installation/docker-settings.png){ width="900px" }
 
 
 ### 2.7 下载安装包
@@ -107,7 +107,7 @@
 	sudo su -
 	```
 
-![启动Ubuntu](../img/installation/launch-ubuntu.png)
+![启动Ubuntu](../img/installation/launch-ubuntu.png){ width="600px" }
 
 
 ### 2.9 检查 Docker 环境
@@ -120,7 +120,7 @@
 
 	如能像下图一样正常显示 docker 版本信息，则能正常执行 DataEase 后续的安装操作，如出现异常，请根据提示信息解决异常问题。
 
-![docker检测](../img/installation/check-docker.png)
+![docker检测](../img/installation/check-docker.png){ width="600px" }
 
 
 ### 2.10 解压安装包
@@ -270,7 +270,7 @@
 	密码: dataease
 	```
 
-![安装DataEase](../img/installation/windows-install.png)
+![安装DataEase](../img/installation/windows-install.png){ width="900px" }
 
 
 ## 3 其他注意事项
@@ -278,4 +278,4 @@
 !!! Abstract ""
 	注意：内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，如果使用了外部 MySQL 或者修改了内置 MySQL 的容器名称的话，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。
 
-![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png){ width="900" }
+![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png){ width="900px" }
