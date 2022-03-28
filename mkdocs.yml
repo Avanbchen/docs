@@ -79,6 +79,7 @@ nav:
                 - 视图功能设计: user_manual/view_module/view_design.md
                 - 视图图库: user_manual/view_module/view_gallery.md
             - 过滤组件:
+                - 添加过滤组件: user_manual/filter_module/filter_module_create.md
                 - 时间过滤组件: user_manual/filter_module/filtertime_module.md
                 - 文本过滤组件: user_manual/filter_module/filtertext_module.md
                 - 数字过滤组件: user_manual/filter_module/filternumber_module.md

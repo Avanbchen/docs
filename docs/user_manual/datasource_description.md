@@ -13,3 +13,5 @@
     - **OLAP 型数据库：** Apache Hive、Elasticsearch、ClickHouse、Apache Doris
     - **数据文件：** Excel
     - **API 数据源**
+
+![支持的数据源类型](../img/datasource_configuration/支持的数据源类型.png){ width="900" }
