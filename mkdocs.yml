@@ -96,6 +96,7 @@ nav:
         - 移动端:
             - 移动端概述: user_manual/app_description.md
             - 移动端布局: user_manual/app_design.md
+    - 教学视频: instructional_video.md
     - 常见问题:
         - 安装配置:
             - 安装配置相关: faq/configuration_faq/configuration.md

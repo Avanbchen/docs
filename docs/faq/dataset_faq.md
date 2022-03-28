@@ -6,7 +6,7 @@
     1. 修改配置文件: /opt/dataease/conf/fe.conf，将参数改为：max_layout_length_per_row=10000000
     2. 重启 doris-fe: docker restart doris-fe
 
-2.创建 Excel 数据集或定时同步类型的数据集时，提示"Access denied for user 'root'(using password:YES)
+## 2 创建 Excel 数据集或定时同步类型的数据集时，提示 "Access denied for user 'root'(using password:YES)
 
 ![doris错误](../img/faq/doris-invalid.png){ width="900px" }
 

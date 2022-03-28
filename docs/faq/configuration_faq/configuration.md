@@ -48,7 +48,7 @@
     第一次安装 DataEase 后，会在运行目录下创建一个 .env 文件(默认路径 /opt/dataease/.env)，install.conf 配置文件中的配置项会记录在此。后续的安装和升级操作，不会去修改 .env 文件。  
     修改运行端口，请参考[80 端口被占用了，如何修改为其他端口？](#5-dataease)  
     修改运行目录，请参考[如何迁移已有的运行目录到其他路径上？](#6)。  
-    修改 MySQL 相关配置，请参考[如何修改内置 MySQL 端口？](../dataease_mysql/#_1) 、[在安装完 DataEase 后如何切换外部 MySQL？](../dataease_mysql/#3-dataease-mysql)、 [如何将 DataEase 数据库由外部 MySQL 切换为 内置 MySQL？](../dataease_mysql/#4-dataease-mysql-mysql)等
+    修改 MySQL 相关配置，请参考[如何修改内置 MySQL 端口？](../dataease_mysql/#1-mysql) 、[在安装完 DataEase 后如何切换外部 MySQL？](../dataease_mysql/#3-dataease-mysql)、 [如何将 DataEase 数据库由外部 MySQL 切换为 内置 MySQL？](../dataease_mysql/#4-dataease-mysql-mysql)等
 
 
 ## 5 修改 DataEase 访问端口

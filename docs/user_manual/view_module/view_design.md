@@ -5,7 +5,7 @@
 !!! Abstract ""
     点击，跳转到字段管理页面，可编辑对应数据集的字段，如修改字段类型、名称、切换为维度或指标等。
 
-![编辑字段1](../../img/view_generation/编辑字段入口.png){ width="900px" }
+![编辑字段1](../../img/view_generation/编辑字段入口.png){ width="900px" }  
 ![编辑字段](../../img/view_generation/编辑字段.png){ width="900px" }
 
 ### 1.2 更换数据集
@@ -13,7 +13,7 @@
 !!! Abstract ""
     点击，可为视图更换数据集。
 
-![更换数据集入口](../../img/view_generation/更换数据集入口.png){ width="900px" }
+![更换数据集入口](../../img/view_generation/更换数据集入口.png){ width="900px" }  
 ![更换数据集](../../img/view_generation/更换数据集.png){ width="900px" }
 
 ### 1.3 更改图表类型
