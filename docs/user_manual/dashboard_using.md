@@ -1,7 +1,7 @@
 ## 1 查看
 
 !!! Abstract ""
-	点击下图中所示位置，查看仪表板
+	点击下图中所示位置，查看仪表板。
 
 ![仪表盘_查看](../img/dashboard_generation/仪表板_查看.png){ width="900px" }
 
@@ -11,6 +11,11 @@
 	点击下图中所示位置，点击【分享】。
 
 ![仪表板_分享](../img/dashboard_generation/仪表板_分享.png){ width="900px" }
+
+!!! Abstract ""
+	可在下图所示的位置，选择分享的组织、角色或用户。
+
+![仪表板_分享给](../img/dashboard_generation/仪表板_分享给.png){ width="900px" }
 
 !!! Abstract ""
 	可在下图所示位置：
@@ -41,9 +46,9 @@
 ![仪表板_保存为模版](../img/dashboard_generation/仪表板_保存为模版.png){ width="900px" }
 
 !!! Abstract ""
-	若保存模板时提示"请选择所属类别"，则需要用户在[「系统管理新建模板分类」](../system_management/module/#_1)。
+	若保存模板时提示"请选择所属类别"，请用户在模板管理自行添加新的模板分类。
 
-![仪表板_保存为模板_添加分类](../img/dashboard_generation/仪表板_保存为模板_添加分类.png){ width="900px" }
+![新建模板分类](../../img/system_management/新建模板分类.png){ width="900px" }
 
 ## 5 导出为模板
 
@@ -55,26 +60,26 @@
 ## 6 导出为 PDF
 
 !!! Abstract ""
-	点击下图中所示位置，点击可弹出pdf的预览窗口
+	点击下图中所示位置，点击可弹出 pdf 的预览窗口。
 
 ![仪表板_导出pdf](../img/dashboard_generation/仪表板_导出pdf入口.png){ width="900px" }
 
 !!! Abstract ""
-	预览导出的pdf样式，另外还支持带参数下载，比如：仪表板名称、导出时间、导出人等。点击【导出pdf】，下载pdf文件至本地；点击【取消】，取消下载pdf文件。
+	预览导出的 pdf 样式，另外还支持带参数下载，比如：仪表板名称、导出时间、导出人等。点击【导出 pdf 】，下载 pdf 文件至本地；点击【取消】，取消下载 pdf 文件。
 
 ![仪表板_导出pdf](../img/dashboard_generation/仪表板_导出pdf预览.png){ width="900px" }
 
 ## 7 预览
 
 !!! Abstract ""
-	支持两种预览方式，第一种：新打开页面预览，第二种：全屏预览仪表盘
+	支持两种预览方式，第一种：新打开页面预览，第二种：全屏预览仪表盘。
 
 ![仪表板_预览](../img/dashboard_generation/仪表板_预览.png){ width="900px" }
 
 ## 8 查看明细
 
 !!! Abstract ""
-	预览模式下，视图可放大，可查看明细并下载
+	预览模式下，视图可放大，可查看明细并下载。
 
 ![仪表板_预览](../img/dashboard_generation/仪表板_放大.png){ width="900px" }
 

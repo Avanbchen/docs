@@ -17,5 +17,5 @@
 
 !!! Abstract ""
     用户模板来源于仪表板的转换，可在仪表板预览界面"保存为模板"，如下图所示，也可点击【导入模板】，上传 .DE 结尾模板文件，添加用户模板。
-![导入模板](../../img/system_management/导入模板.png)  
-![上传模板](../../img/system_management/上传模板.png)
+![导入模板](../../img/system_management/导入模板.png){ width="900px" } 
+![上传模板](../../img/system_management/上传模板.png){ width="900px" }
