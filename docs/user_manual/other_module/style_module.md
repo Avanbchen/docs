@@ -3,7 +3,7 @@
 !!! Abstract ""
 	文本型组件，可设置文字的大小、颜色、粗细、背景色、超链接等。
 
-![仪表盘编辑_其他组件](../../img/dashboard_generation/文本组件.png){ width="900px" }
+![仪表盘编辑_其他组件](../../img/dashboard_generation/文字组件.png){ width="900px" }
  
 ## 2 矩形框
 
