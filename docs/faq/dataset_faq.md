@@ -1,6 +1,4 @@
-## 1 添加 Excel 数据集相关错误
-
-1.添加 Excel 数据集时出现 java.sql.SQLSyntaxErrorException: errCode = 2, detailMessage = The size of a row (1048587) exceed the maximal row size: 1000000
+## 1 添加 Excel 数据集时出现 java.sql.SQLSyntaxErrorException: errCode = 2, detailMessage = The size of a row (1048587) exceed the maximal row size: 1000000
 
 !!! Abstract ""
     1. 修改配置文件: /opt/dataease/conf/fe.conf，将参数改为：max_layout_length_per_row=10000000
