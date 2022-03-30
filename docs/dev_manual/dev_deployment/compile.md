@@ -8,7 +8,7 @@
 	npm i
 	```
 
-![npm-install](../../img/dev_manual/npm-install.png){width="800px"}
+![npm-install](../../img/dev_manual/npm-install.png){width="900px"}
 
 !!! Abstract ""
 	**注意：国内使用 npm 时经常会遇到网络问题，可以考虑将 npm 源替换为国内的源。**  
@@ -17,17 +17,19 @@
 ### 1.2 运行前端
 
 !!! Abstract ""
-	前端运行有两种方式：
+	**前端运行有两种方式：**
 
     - npm 运行（适用于开发场景）
     - nginx 运行（适用于稳定运行场景）
 
 !!! Abstract ""
-	方式一 npm 运行：进入前端目录 frontend，修改 .env.development 文件中的 VUE_APP_BASE_API，将 IP 地址设置为本机 IP，后端默认运行端口为 8081:
-![frontend-development-env](../../img/dev_manual/frontend-development-env.png){width="800px"}
+	**方式一 npm 运行：**  
+	进入前端目录 frontend，修改 .env.development 文件中的 VUE_APP_BASE_API，将 IP 地址设置为本机 IP，后端默认运行端口为 8081:
+
+![frontend-development-env](../../img/dev_manual/frontend-development-env.png){width="900px"}
 
 !!! Abstract ""
-	修改后执行命令运行：
+	**修改后执行命令运行：**
 	```shell
 	npm run serve
 	```
@@ -36,18 +38,20 @@
 	**注意：** 以 npm 方式运行前端，默认会运行在本地的 9528 端口上，通过浏览器访问 http://ip:9528 即可。
 
 !!! Abstract ""
-	方式二 nginx 运行：以 nginx、apache 等运行前端，则修改 .env.production 文件中的 VUE_APP_BASE_API，将 IP 地址设置为本机 IP，后端默认运行端口为 8081:
-![frontend-production-env](../../img/dev_manual/frontend-production-env.png){width="800px"}
+	**方式二 nginx 运行：**  
+	以 nginx、apache 等运行前端，则修改 .env.production 文件中的 VUE_APP_BASE_API，将 IP 地址设置为本机 IP，后端默认运行端口为 8081:
+
+![frontend-production-env](../../img/dev_manual/frontend-production-env.png){width="900px"}
 
 !!! Abstract ""
-	修改后执行命令进行编辑，生成 dist 目录：
+	**修改后执行命令进行编辑，生成 dist 目录：**
 	```shell
 	npm run build
 	# 将 dist 目录放置到 /opt/dataease/frontend/dist
 	mkdir -p /opt/dataease/frontend
 	cp -r dist /opt/dataease/frontend/dist
 	```
-    配置 nginx：  
+    **配置 nginx：**    
 	此处假设 DataEase 前端运行在 8000 端口，后端运行在 8081，且 DataEase 前端编译后生成的 dist 目录存放到路径为 /opt/dataease/frontend/dist，相应的 nginx 配置如下：
 	```conf
 	server {
@@ -75,8 +79,9 @@
 ### 1.3 编译后端
 
 !!! Abstract ""
-	进入后端代码目录 backend，修改 pom.xml，去掉默认的打包前端代码的部分
-![remove-frontend](../../img/dev_manual/remove-frontend.png){width="800px"}
+	**进入后端代码目录 backend，修改 pom.xml，去掉默认的打包前端代码的部分：**
+
+![remove-frontend](../../img/dev_manual/remove-frontend.png){width="900px"}
 
 !!! Abstract ""
 	执行编译命令：
@@ -130,7 +135,7 @@
 ### 2.2 nginx 配置
 
 !!! Abstract ""
-	假设各个文件分别按如下路径放置：  
+	**假设各个文件分别按如下路径放置：**  
 
 	- frontend 编译后文件存放目录
   	/opt/dataease/frontend/dist
@@ -139,7 +144,7 @@
 	- nginx 配置文件路径
   	/usr/local/etc/nginx/nginx.conf
 
-	在dataease工程目录下执行：
+	**在dataease工程目录下执行：**
 	```shell
 	mkdir -p /opt/dataease/frontend/dist
 	cp -r frontend/dist/* /opt/dataease/frontend/dist
@@ -149,7 +154,7 @@
 	mv /opt/dataease/mobile/dist/index.html /opt/dataease/mobile/dist/app.html
 	```
 
-	**修改 nginx.conf 配置**
+	**修改 nginx.conf 配置：**
 	```
 	server {
     	listen      8000;

@@ -23,7 +23,7 @@
 ## 3 重置 DataEase 安装参数
 
 !!! Abstract ""
-    以下为重置 DataEase 安装参数的通用方法，该方法涉及到重新安装 DataEase 的过程，耗时相对会长一些，如果只是简单的调整安装参数的话，可以参考具体的调整方案。  
+    以下为重置 DataEase 安装参数的通用方法，该方法涉及到重新安装 DataEase 的过程，耗时相对会长一些，如果只是简单的调整安装参数的话，可以参考具体的调整方案：  
 
     1. 清除存放原有配置参数的相关文件。
     ```shell
@@ -45,10 +45,10 @@
 ## 4 修改已安装的 DataEase 配置参数
 
 !!! Abstract ""
-    第一次安装 DataEase 后，会在运行目录下创建一个 .env 文件(默认路径 /opt/dataease/.env)，install.conf 配置文件中的配置项会记录在此。后续的安装和升级操作，不会去修改 .env 文件。  
-    修改运行端口，请参考[80 端口被占用了，如何修改为其他端口？](#5-dataease)  
-    修改运行目录，请参考[如何迁移已有的运行目录到其他路径上？](#6)。  
-    修改 MySQL 相关配置，请参考[如何修改内置 MySQL 端口？](../dataease_mysql/#1-mysql) 、[在安装完 DataEase 后如何切换外部 MySQL？](../dataease_mysql/#3-dataease-mysql)、 [如何将 DataEase 数据库由外部 MySQL 切换为 内置 MySQL？](../dataease_mysql/#4-dataease-mysql-mysql)等
+    第一次安装 DataEase 后，会在运行目录下创建一个 .env 文件(默认路径 /opt/dataease/.env)，install.conf 配置文件中的配置项会记录在此。后续的安装和升级操作，不会去修改 .env 文件；  
+    修改运行端口，请参考[80 端口被占用了，如何修改为其他端口？](#5-dataease)；  
+    修改运行目录，请参考[如何迁移已有的运行目录到其他路径上？](#6)；  
+    修改 MySQL 相关配置，请参考[如何修改内置 MySQL 端口？](../dataease_mysql/#1-mysql) 、[在安装完 DataEase 后如何切换外部 MySQL？](../dataease_mysql/#3-dataease-mysql)、 [如何将 DataEase 数据库由外部 MySQL 切换为 内置 MySQL？](../dataease_mysql/#4-dataease-mysql-mysql)等。
 
 
 ## 5 修改 DataEase 访问端口
@@ -58,7 +58,7 @@
     
 
 !!! Abstract ""
-    v1.0.2 及以后的版本，支持配置文件方案管理 DataEase 服务的运行，可以在 DataEase 运行目录下找到 .env 文件（(默认路径 /opt/dataease/.env)，修改文件里的 DE_PORT，保存后执行 dectl reload 即可。
+    v1.0.2 及以后的版本，支持配置文件方案管理 DataEase 服务的运行，可以在 DataEase 运行目录下找到 .env 文件（(默认路径 /opt/dataease/.env)，修改文件里的 DE_PORT，保存后执行 dectl reload 即可；
 
     v1.0.2 以前的版本，可以登录到 DataEase 服务器上，找到 .env 文件(默认路径 /opt/dataease/.env)，把 dataease 的运行端口 80 端口改为其他端口，然后执行 dectl reload 即可。
 
@@ -66,14 +66,14 @@
 ## 6 <span id="migration">迁移运行目录</span>
 
 !!! Abstract ""
-    1. 修改 /usr/bin/dectl，将 DE_BASE 改为新的目标路径，如: /home/test  
-    2. 将原运行目录迁移到新的目标路径下  
+    1. 修改 /usr/bin/dectl，将 DE_BASE 改为新的目标路径，如: /home/test；  
+    2. 将原运行目录迁移到新的目标路径下；  
     ```shell
     # 假设源运行目录为 /opt，新目标路径为 /home/test
     mv /opt/dataease /home/test/
     ```
-    3. 修改 .env 配置文件。源运行目录迁移到新路径下之后，修改该路径下 dataease/.env 文件，将 DE_BASE 改为新的目标路径，如: /home/test  
-    4. 重启 DataEase 服务
+    3. 修改 .env 配置文件。源运行目录迁移到新路径下之后，修改该路径下 dataease/.env 文件，将 DE_BASE 改为新的目标路径，如: /home/test；  
+    4. 重启 DataEase 服务。
     ```shell
     service dataease restart
     ```
@@ -81,12 +81,12 @@
 ## 7 <span id="modify-address-space">修改运行环境 Docker 网段</span>
 
 !!! Abstract ""
-    **从 v1.4.0 版本开始，DataEase 支持 docker 运行网段的修改。**
+    **从 v1.4.0 版本开始，DataEase 支持 docker 运行网段的修改：**
 
-    1. 停止 DataEase 服务： service dataease stop
-    2. 修改运行目录 /opt/dataease 目录下的 docker-compose.yml ，将默认的 172.19.0.0/16 和 172.19.0.1 改为其他网段，如 172.33.0.0/16 和 172.33.0.1
-    3. 修改 /opt/dataease 目录下的 docker-compose-doris.yml，把里面 172.19.0.198 和 172.19.0.199 改为第一步设置的网段的ip，如 172.33.0.198 和 172.33.0.199
-    4. 重启 DataEase 服务：service dataease restart
+    1. 停止 DataEase 服务： service dataease stop；
+    2. 修改运行目录 /opt/dataease 目录下的 docker-compose.yml ，将默认的 172.19.0.0/16 和 172.19.0.1 改为其他网段，如 172.33.0.0/16 和 172.33.0.1；
+    3. 修改 /opt/dataease 目录下的 docker-compose-doris.yml，把里面 172.19.0.198 和 172.19.0.199 改为第一步设置的网段的ip，如 172.33.0.198 和 172.33.0.199；
+    4. 重启 DataEase 服务：service dataease restart。
 
 
 ## 8 非 root 用户能否安装 DataEase
@@ -106,7 +106,7 @@
     - mysql 容器名冲突
 
 !!! Abstract ""
-    由于 MeterSphere 在运行时并没有指定运行网段，所以不一定会产生 docker 网段冲突，如没有网段冲突，则可以直接跳到第三步执行。
+    由于 MeterSphere 在运行时并没有指定运行网段，所以不一定会产生 docker 网段冲突，如没有网段冲突，则可以直接跳到第三步执行：
 
     1. 修改 MeterSphere 的网段  
     修改 /opt/metersphere/docker-compose-base.yml，网络部分定义如下：

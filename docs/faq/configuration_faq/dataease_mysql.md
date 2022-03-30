@@ -1,7 +1,7 @@
 ## 1 <span id="mysql-port">如何修改内置 MySQL 端口</span>
 
 !!! Abstract ""
-    1. 修改配置文件  
+    1. 修改配置文件：  
     **1.4 版本之前的版本**，修改运行目录下 /opt/dataease/docker-compose-mysql.yml 文件，将 MySQL 外部运行端口参数 ${DE_MYSQL_PORT} 改为新端口，如 3307:
     ```yml
         ports:
@@ -73,8 +73,8 @@
       - innodb_large_prefix=on
 
 !!! Abstract ""
-    1. 修改运行目录下 .env (默认路径 /opt/dataease/.env) 文件中 MySQL 的相关配置，包括 DE_EXTERNAL_MYSQL、DE_MYSQL_HOST、DE_MYSQL_PORT、DE_MYSQL_DB、DE_MYSQL_USER、DE_MYSQL_PASSWORD，DE_EXTERNAL_MYSQL=true  
-    2. 修改 dataease.properties (默认路径 /opt/dataease/conf/dataease.properties)，将 spring.datasource 开头的几个参数里，MySQL 的配置参数进行相应的修改，包括：数据库地址、数据库端口、数据库库名、数据库用户名、数据库密码
+    1. 修改运行目录下 .env (默认路径 /opt/dataease/.env) 文件中 MySQL 的相关配置，包括 DE_EXTERNAL_MYSQL、DE_MYSQL_HOST、DE_MYSQL_PORT、DE_MYSQL_DB、DE_MYSQL_USER、DE_MYSQL_PASSWORD，DE_EXTERNAL_MYSQL=true；  
+    2. 修改 dataease.properties (默认路径 /opt/dataease/conf/dataease.properties)，将 spring.datasource 开头的几个参数里，MySQL 的配置参数进行相应的修改，包括：数据库地址、数据库端口、数据库库名、数据库用户名、数据库密码；  
     3. 内置 MySQL 切换为外置 MySQL，修改运行目录下 /opt/dataease/docker-compose.yml 文件，将其中 depends_on 相关设置删除：
     ```yml
         depends_on:
@@ -84,11 +84,11 @@
     4. 重启 DataEase 服务： service dataease restart
 
 
-## 4 <span id="mysql-switch-inner">DataEase 数据库由外部 MySQL 切换为内置MySQL</span>
+## 4 <span id="mysql-switch-inner">DataEase 数据库由外部 MySQL 切换为内置 MySQL</span>
 
 !!! Abstract ""
-    1. 修改运行目录下 .env (默认路径 /opt/dataease/.env) 文件中 MySQL 的相关配置，包括 DE_EXTERNAL_MYSQL、DE_MYSQL_HOST、DE_MYSQL_PORT、DE_MYSQL_DB、DE_MYSQL_USER、DE_MYSQL_PASSWORD，DE_EXTERNAL_MYSQL=false  
-    2. 修改 dataease.properties (默认路径 /opt/dataease/conf/dataease.properties)，将 spring.datasource 开头的几个参数里，MySQL 的配置参数进行相应的修改，包括：数据库地址、数据库端口、数据库库名、数据库用户名、数据库密码  
+    1. 修改运行目录下 .env (默认路径 /opt/dataease/.env) 文件中 MySQL 的相关配置，包括 DE_EXTERNAL_MYSQL、DE_MYSQL_HOST、DE_MYSQL_PORT、DE_MYSQL_DB、DE_MYSQL_USER、DE_MYSQL_PASSWORD，DE_EXTERNAL_MYSQL=false；  
+    2. 修改 dataease.properties (默认路径 /opt/dataease/conf/dataease.properties)，将 spring.datasource 开头的几个参数里，MySQL 的配置参数进行相应的修改，包括：数据库地址、数据库端口、数据库库名、数据库用户名、数据库密码；  
     3. 修改运行目录下 /opt/dataease/docker-compose.yml 文件，为 dataesae 服务加上 depends_on 相关设置，类似(镜像版本注意按实际情况替换)：  
     ```yml
     version: '2.1'
@@ -128,8 +128,9 @@
 !!! Abstract ""
     **当出现类似下图的错误时，可以通过任选以下方式之一处理：**  
 
-    1. 修改 my.cnf 文件的 group_concat_max_len 参数，如：group_concat_max_len=1024000，然后重启 MySQL 服务  
-    2. 进入 MySQL，执行 SET GLOBAL group_concat_max_len=1024000; 临时修改该参数的值
+    1. 修改 my.cnf 文件的 group_concat_max_len 参数，如：group_concat_max_len=1024000，然后重启 MySQL 服务；  
+    2. 进入 MySQL，执行 SET GLOBAL group_concat_max_len=1024000; 临时修改该参数的值。
+
 ![mysql-concat](../../img/faq/mysql-concat.png){ width="900px" }
 
 
@@ -153,7 +154,7 @@
     出现该问题一般是由于 DataEase 使用的外部 MySQL 配置参数 lower_case_table_names 设置为 0 了。  
     需要将该参数设置为 lower_case_table_names=1，重启 MySQL 服务即可。
 
-![大小写](../../img/faq/mysql-lowercase.png)
+![大小写](../../img/faq/mysql-lowercase.png){ width="900px" }
 
 ## 8 <span id="demo-datasource">内置演示数据无效怎么办</span>
 
@@ -163,9 +164,9 @@
 ## 9 使用 DataEase 的时候提示 "illegal mix of collations (latin1_bin implicit) and (utf8_general_ci coercible)" 的错误
 
 !!! Abstract ""
-    该问题是由于字符集编码不同导致，可以参考下图的配置  
-    1. 更改 MySQL 的 my.cnf，把 client 和 server 的字符集改为 utf8  
-    2. 修改 collation 编码
+    **该问题是由于字符集编码不同导致，可以参考下图的配置：**  
+    1. 更改 MySQL 的 my.cnf，把 client 和 server 的字符集改为 utf8；  
+    2. 修改 collation 编码：
     ```mysql
     set collation_database=utf8_general_ci;
     set collation_connection=utf8_general_ci;

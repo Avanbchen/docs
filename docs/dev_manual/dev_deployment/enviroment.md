@@ -1,7 +1,7 @@
 ## 1 操作系统参数设置
 
 !!! Abstract ""
-	增加系统监听文件数量：
+	**增加系统监听文件数量：**
 	```shell
 	echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 	```
@@ -9,7 +9,7 @@
 ## 2 MySQL 配置
 
 !!! Abstract ""
-	以下是推荐的 MySQL 配置：
+	**以下是推荐的 MySQL 配置：** 
 	```inf
 	[mysqld]
 	datadir=/var/lib/mysql
@@ -42,7 +42,7 @@
 ## 3 创建 MySQL 数据库
 
 !!! Abstract ""
-	登录要连接的 MySQL 服务器，创建 DataEase 运行时使用的数据库，此处示例数据库名为 dataease-wei。
+	**登录要连接的 MySQL 服务器，创建 DataEase 运行时使用的数据库，此处示例数据库名为 dataease-wei：**
 
 	```mysql
 	CREATE DATABASE `dataease-wei` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
