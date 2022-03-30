@@ -5,8 +5,8 @@
 !!! Abstract ""
     如遇到提示缺少 dataease-plugin-interface 相关依赖的话，可以下载 dataease-plugins 工程源码，在本地编译一下即可：
     ```shell
-    git clone git@github.com:dataease/dataease-plugins.git
-    cd dataease-plugins
+    git clone git@github.com:dataease/dataease-extension-sdk.git
+    cd dataease-extension-sdk/dataease-plugin-interface
     mvn clean install
     ```
     如遇到缺少 kettle 相关依赖的话，可以检查是否使用了 maven 的 mirror，建议去掉 mirror 后重试。如还不行的话，可以在百度网盘上下载一下最小化的 dataease 依赖包。链接: https://pan.baidu.com/s/1fWv_ze-QKUew3ND4NAdt8Q 提取码: rpzi
