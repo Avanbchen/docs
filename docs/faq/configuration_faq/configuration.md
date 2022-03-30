@@ -2,7 +2,7 @@
 ## 1 DataEase 默认的登录信息
 
 !!! Abstract ""
-    DataEase 成功安装后，默认内置了两个用户：
+    **DataEase 成功安装后，默认内置了两个用户：**
 
       - 管理员用户为 admin ，密码为 dataease
       - 体验用户为 demo ，密码为 dataease
@@ -11,10 +11,8 @@
 ## 2 查看 DataEase 相关日志信息
 
 !!! Abstract ""
-    在 DataEase 的运行目录下有专门存放组件日志的目录（默认路径 /opt/dataease/logs)，各个组件的日志分别存放在以各自命名的目录下，如 dataease 目录存放的是 dataease 的运行日志，fe 目录存放的是 doris-fe 的运行日志等。可以通过查看相应的运行日志来定位一些使用中遇到的问题。   
-
-!!! Abstract ""
-    另外，也可以通过 docker logs 命令来查看容器中的一些日志输出，例如：
+    在 DataEase 的运行目录下有专门存放组件日志的目录（默认路径 /opt/dataease/logs)，各个组件的日志分别存放在以各自命名的目录下，如 dataease 目录存放的是 dataease 的运行日志，fe 目录存放的是 doris-fe 的运行日志等。可以通过查看相应的运行日志来定位一些使用中遇到的问题。  
+    **另外，也可以通过 docker logs 命令来查看容器中的一些日志输出，例如：**
         ```shell
         docker logs -n 30 -f dataease
         ```
@@ -23,7 +21,7 @@
 ## 3 重置 DataEase 安装参数
 
 !!! Abstract ""
-    以下为重置 DataEase 安装参数的通用方法，该方法涉及到重新安装 DataEase 的过程，耗时相对会长一些，如果只是简单的调整安装参数的话，可以参考具体的调整方案：  
+    **以下为重置 DataEase 安装参数的通用方法，该方法涉及到重新安装 DataEase 的过程，耗时相对会长一些，如果只是简单的调整安装参数的话，可以参考具体的调整方案：**  
 
     1. 清除存放原有配置参数的相关文件。
     ```shell
@@ -54,10 +52,8 @@
 ## 5 修改 DataEase 访问端口
 
 !!! Abstract ""
-    当默认的访问端口 80 已被占用，如何修改为其它端口？
-    
+    **当默认的访问端口 80 已被占用，如何修改为其它端口?**
 
-!!! Abstract ""
     v1.0.2 及以后的版本，支持配置文件方案管理 DataEase 服务的运行，可以在 DataEase 运行目录下找到 .env 文件（(默认路径 /opt/dataease/.env)，修改文件里的 DE_PORT，保存后执行 dectl reload 即可；
 
     v1.0.2 以前的版本，可以登录到 DataEase 服务器上，找到 .env 文件(默认路径 /opt/dataease/.env)，把 dataease 的运行端口 80 端口改为其他端口，然后执行 dectl reload 即可。
@@ -92,7 +88,7 @@
 ## 8 非 root 用户能否安装 DataEase
 
 !!! Abstract ""
-    可以支持非 root 的 sudoer 用户，在执行安装脚本的时候，加上 sudo 执行即可，例如：
+    **可以支持非 root 的 sudoer 用户，在执行安装脚本的时候，加上 sudo 执行即可，例如：**
     ```shell
     sudo bash install.sh
     ```
@@ -100,13 +96,13 @@
 ## 9 如何与 MeterSphere 安装在同一台服务器上？
 
 !!! Abstract ""
-    DataEase 与 MeterSphere 安装在同一台服务器上时，有可能会发生以下冲突：
+    **DataEase 与 MeterSphere 安装在同一台服务器上时，有可能会发生以下冲突：**
 
     - docker 网段冲突
     - mysql 容器名冲突
 
 !!! Abstract ""
-    由于 MeterSphere 在运行时并没有指定运行网段，所以不一定会产生 docker 网段冲突，如没有网段冲突，则可以直接跳到第三步执行：
+    **由于 MeterSphere 在运行时并没有指定运行网段，所以不一定会产生 docker 网段冲突，如没有网段冲突，则可以直接跳到第三步执行：**
 
     1. 修改 MeterSphere 的网段  
     修改 /opt/metersphere/docker-compose-base.yml，网络部分定义如下：

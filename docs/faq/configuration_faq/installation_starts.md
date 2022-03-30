@@ -15,16 +15,14 @@
 ## 3 无法通过一键安装脚本在线安装 docker 和 docker-compose
 
 !!! Abstract ""
-    **注意：** 在线安装脚本使用的下载源为境外源，可能会存在网络不稳定，或者网速慢的情况。
-
-!!! Abstract ""
+    **注意：** 在线安装脚本使用的下载源为境外源，可能会存在网络不稳定，或者网速慢的情况。  
     可以在百度网盘上下载 docker 离线安装包进行安装，链接: https://pan.baidu.com/s/1WUbObtcPgPqpaNK6TGCOrA 提取码: gbut  
     解压后执行安装包里的安装脚本即可： bash install-docker.sh
 
 ## 4 服务无法完全启动，查看 dataease 日志，发现 docker 访问出现 Permission denied。
 
 !!! Abstract ""
-    这种情况一般是由于 selinux 导致的，可以临时关闭 selinux 试试：
+    **这种情况一般是由于 selinux 导致的，可以临时关闭 selinux 试试：**
     ```shell
     setenforce 0
     ```

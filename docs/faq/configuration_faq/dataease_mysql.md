@@ -139,7 +139,6 @@
 !!! Abstract ""
     **注意：** 出于安全考虑，当 MySQL 配置文件 my.cnf 权限过高时，会被 MySQL 忽略加载。请确认配置文件目录(默认路径 /opt/dataease/conf)下的配置文件的访问权限为 644。
 
-!!! Abstract ""
     可以通过命令修改文件权限：
     ```shell
     chmod 644 /opt/dataease/conf/*

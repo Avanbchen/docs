@@ -1,9 +1,9 @@
 ## 1 下载代码
 
 !!! Abstract ""
-	**此处以 v1.4 分支举例：**
+	**此处以 v1.8 分支举例：**
 	```shell
-	git clone -b v1.4 https://github.com/dataease/dataease.git
+	git clone -b v1.8 https://github.com/dataease/dataease.git
 	```
 
 ## 2 地图库准备

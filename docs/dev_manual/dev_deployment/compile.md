@@ -84,7 +84,7 @@
 ![remove-frontend](../../img/dev_manual/remove-frontend.png){width="900px"}
 
 !!! Abstract ""
-	执行编译命令：
+	**执行编译命令：**
 	```shell
 	mvn clean package
 	```
@@ -95,7 +95,7 @@
 ### 1.4 运行后端
 
 !!! Abstract ""
-	后端代码编译完成后，会在 backend/target 目录下生成一个 backend-1.4.0.jar，可以通过命令运行后端：
+	**后端代码编译完成后，会在 backend/target 目录下生成一个 backend-1.4.0.jar，可以通过命令运行后端：**
 	```shell
 	nohup java -jar backend-1.4.0.jar &
 	```
@@ -105,7 +105,7 @@
 ### 2.1 源码编译打包
 
 !!! Abstract ""
-	**打包 backend**  
+	**打包 backend：**  
 	在backend目录下，执行下面命令。
 
 	```shell
@@ -118,14 +118,14 @@
 	2. 命令一定要加 -Pstage；
 	3. 运行文件为 target/backend-1.8.0.jar。
 
-	**打包 frontend**  
+	**打包 frontend：**  
 	在 frontend 目录下，执行下面命令，注意命令后缀。
 
 	```shell
 	npm run build:stage
 	```
 
-	**打包 mobile**  
+	**打包 mobile：**  
 	在 mobile 目录下，执行下面命令，注意命令后缀。
 	
 	```shell
