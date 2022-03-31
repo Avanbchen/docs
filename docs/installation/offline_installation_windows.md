@@ -47,7 +47,7 @@
 ### 2.3 安装 Ubuntu
 
 !!! Abstract ""
-	在 Windows 10 的应用商店里搜索"Ubuntu"并安装
+	**在 Windows 10 的应用商店里搜索"Ubuntu"并安装：**
 
 ![安装Ubuntu](../img/installation/windows-install-ubuntu.png){ width="900px" }
 
@@ -56,7 +56,7 @@
 ### 2.4 检测 Ubuntu WSL 版本
 
 !!! Abstract ""
-	以管理员身份执行：
+	**以管理员身份执行：**
 	```powershell
 	wsl.exe -l -v
 	```
@@ -64,12 +64,12 @@
 ![WSL版本1](../img/installation/check-version-1.png){ width="900px" }
 
 !!! Abstract ""
-	示例中安装的 Ubuntu Name 为 "Ubuntu"， 如像上图出现 Ubuntu 版本为 1， 则继续执行命令：
+	**示例中安装的 Ubuntu Name 为 "Ubuntu"， 如像上图出现 Ubuntu 版本为 1， 则继续执行命令：**
 	```powershell
 	wsl.exe --set-version Ubuntu 2
 	```
 
-	出现下图结果即为成功:
+	**出现下图结果即为成功：**
 
 ![WSL版本2](../img/installation/check-version-2.png){ width="900px" }
 
@@ -77,7 +77,7 @@
 ### 2.5 安装 Docker
 
 !!! Abstract ""
-	下载[Docker Desktop for Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)，如果使用的是 macOS，[Install Docker Desktop on Mac | Docker Documentation](https://docs.docker.com/desktop/mac/install/) 。 
+	**下载[Docker Desktop for Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)，如果使用的是 macOS，[Install Docker Desktop on Mac | Docker Documentation](https://docs.docker.com/desktop/mac/install/) 。** 
 
 	安装完成后双击 Docker Desktop Installer.exe 安装即可完成安装。
 
@@ -85,7 +85,7 @@
 ### 2.6 Docker 设置
 
 !!! Abstract ""
-	Docker Desktop 安装完成后，进入 Settings 界面，选择 Resources 菜单下的 WSL INTEGRATION，按下图设置后，点击右下角的 Apply & Restart 即可。
+	**Docker Desktop 安装完成后，进入 Settings 界面，选择 Resources 菜单下的 WSL INTEGRATION，按下图设置后，点击右下角的 Apply & Restart 即可。**
 
 ![docker设置](../img/installation/docker-settings.png){ width="900px" }
 
@@ -93,7 +93,7 @@
 ### 2.7 下载安装包
 
 !!! Abstract ""
-	请自行下载 DataEase 最新版本的离线安装包(v1.2.3及以上版本)  
+	**请自行下载 DataEase 最新版本的离线安装包(v1.2.3及以上版本) ：** 
 
     安装包下载链接: https://community.fit2cloud.com/#/products/dataease/downloads
 
@@ -101,7 +101,7 @@
 ### 2.8 启动 Ubuntu
 
 !!! Abstract ""
-	在应用商店里，选择 Ubuntu，点击"启动"按钮启动 Ubuntu，并执行命令切换到 root 用户：
+	**在应用商店里，选择 Ubuntu，点击"启动"按钮启动 Ubuntu，并执行命令切换到 root 用户：**
 
 	```shell
 	sudo su -
@@ -113,7 +113,7 @@
 ### 2.9 检查 Docker 环境
 
 !!! Abstract ""
-	在 Ubuntu 命令行中执行命令：
+	**在 Ubuntu 命令行中执行命令：**
 	```shell
 	docker version
 	```
@@ -126,7 +126,7 @@
 ### 2.10 解压安装包
 
 !!! Abstract ""
-	在 Ubuntu 中，以 root 用户执行如下命令：
+	**在 Ubuntu 中，以 root 用户执行如下命令：**
 
 	```sh
 	# 假设安装包存放路径为 c:\dataease-v1.5.0-offline.tar.gz
@@ -262,7 +262,7 @@
     ```
 
 !!! Abstract ""
-	安装成功后，通过浏览器访问如下页面登录 DataEase。
+	**安装成功后，通过浏览器访问如下页面登录 DataEase：**
 
 	```
 	地址: http://目标服务器IP地址:服务运行端口
