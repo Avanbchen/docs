@@ -30,3 +30,12 @@
     ```shell
     service dataease restart
     ```
+
+## 5 DataEase 启动过程中，提示 doris-fe unhealthy
+
+!!! Abstract ""
+    **DataEase 启动过程中，提示 doris-fe unhealthy。执行 dectl status 无法查看到 doris-fe 容器，解决方法如下，执行：**
+    ```shell
+    dectl reload
+    ```
+    重载容器。受限于服务器性能的原因，doris-be 启动比较慢，doris-fe 依赖 doris-be ，在检测时间内未成功启动完成，doris-fe 便不会再启动。

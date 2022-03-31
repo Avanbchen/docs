@@ -174,4 +174,14 @@
 
 ![字符集](../../img/faq/mysql-char.png){ width="600px" }
 
+## 10 DataEase 启动失败，使用 MySQL 8.x 作为外置数据库
+
+!!! Abstract ""
+    DataEase 启动过程中，抛出 Public Key Retrieval is not allowed 的异常。  
+    **解决方法：**
+    ```shell
+    cd /opt/dataease/conf/dataease.properties
+    ```
+    spring.datasource.url 最后加上 &allowPublicKeyRetrieval=true。
+
 

@@ -183,3 +183,36 @@
     ```shell
     dectl reload
     ```
+
+## 10 DataEase 部署成功后页面无法访问
+
+!!! Abstract ""
+    在 CentOS 7.x 环境下一键安装脚本默认会执行相关命令开放防火墙的 DataEase 访问端口，若没有设置公有云安全组，DataEase 部署成功后，dectl status 查看各组件状态均为 healthy ，页面也是无法访问的。  
+    **解决方法如下（以 CentOS 7.x）为例：**
+
+!!! Abstract ""
+    1.检查防火墙状态：
+    ```shell
+    systemctl status firewalld.service
+    ```
+    2.防火墙状态为 active (running)开放 80 端口，重载防火墙，重启 Docker ，重启 DataEase：
+    ```shell
+    firewall-cmd --zone=public --add-port=80/tcp --permanent && firewall-cmd --reload && service docker restart && service dataease restart
+    ```
+    3.在公有云部署，私有云、或者虚拟化环境部署，存在安全组，防火墙状态为 inactive (dead) 的情况下，依然访问不到 DataEase。 
+    检查安全组是否开放 80 端口。若为 OpenStack 等存在安全组的私有云，第一步仍然是检查安全组是否开放 80 端口。
+    
+    4.在确认安全组、防火墙均为正确配置后，考虑 Docker 网桥冲突的问题。
+    提供一个比较简单的排查思路（只适用于虚拟机除了 Docker 外没有其它网络桥接的情况），执行：
+	```shell
+    service docker stop && ip addr show
+	```
+    查看网络信息，若存在冲突情况，则会看到仍然有多余的网桥 br-xxxxx 存在，执行：
+	```shell
+    brectl delbr <br-xxxxx> && systemclt restart network
+	```
+    删除该网桥后，重启 Docker，重启 DataEase，执行：
+	```shell
+    service docker start && service dataease restart
+	```
+    网桥删除可参考：https://ignorantshr.github.io/person-blog/linux/%E5%88%A0%E9%99%A4%E7%BD%91%E6%A1%A5/
