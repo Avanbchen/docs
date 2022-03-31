@@ -184,7 +184,7 @@
     dectl reload
     ```
 
-## 10 DataEase 部署成功后页面无法访问
+## 10 DataEase 部署成功但无法访问
 
 !!! Abstract ""
     在 CentOS 7.x 环境下一键安装脚本默认会执行相关命令开放防火墙的 DataEase 访问端口，若没有设置公有云安全组，DataEase 部署成功后，dectl status 查看各组件状态均为 healthy ，页面也是无法访问的。  
