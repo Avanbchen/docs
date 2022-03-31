@@ -3,8 +3,6 @@
 !!! Abstract ""
 	**本文以 CentOS 8.3 为例，举例说明如何以源码的形式编译 DataEase 工程，并进行前后端分离部署。**  
 	本文所有操作均在阿里云（新加坡区）4C8G 环境中执行。
-
-!!! Abstract ""
 	```shell
 	yum install -y git java-1.8.0-openjdk*
 	```

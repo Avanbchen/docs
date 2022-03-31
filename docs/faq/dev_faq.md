@@ -1,8 +1,7 @@
 ## 1 编译 DataEase 项目源码的时候报错，提示缺少依赖。
 
 !!! Abstract ""
-    **注意：** 在以源码方式运行 DataEase 时，推荐大家使用 v1.0、v1.1 等已发布分支的代码，main 和 dev 分支的代码均处于开发阶段，有些使用到的依赖由于没有达到稳定状态，并没有上传到中央仓库。
-!!! Abstract ""
+    **注意：** 在以源码方式运行 DataEase 时，推荐大家使用 v1.0、v1.1 等已发布分支的代码，main 和 dev 分支的代码均处于开发阶段，有些使用到的依赖由于没有达到稳定状态，并没有上传到中央仓库。  
     如遇到提示缺少 dataease-plugin-interface 相关依赖的话，可以下载 dataease-plugins 工程源码，在本地编译一下即可：
     ```shell
     git clone git@github.com:dataease/dataease-extension-sdk.git

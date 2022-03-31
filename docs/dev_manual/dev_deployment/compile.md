@@ -7,12 +7,13 @@
 	cd frontend
 	npm i
 	```
+	**注意：国内使用 npm 时经常会遇到网络问题，可以考虑将 npm 源替换为国内的源。**  
+	可以参考文档 https://segmentfault.com/a/1190000023314583。
 
 ![npm-install](../../img/dev_manual/npm-install.png){width="900px"}
 
-!!! Abstract ""
-	**注意：国内使用 npm 时经常会遇到网络问题，可以考虑将 npm 源替换为国内的源。**  
-	可以参考文档 https://segmentfault.com/a/1190000023314583。
+
+
 
 ### 1.2 运行前端
 
@@ -33,8 +34,6 @@
 	```shell
 	npm run serve
 	```
-
-!!! Abstract ""
 	**注意：** 以 npm 方式运行前端，默认会运行在本地的 9528 端口上，通过浏览器访问 http://ip:9528 即可。
 
 !!! Abstract ""
@@ -72,8 +71,6 @@
 	
 	}
 	```
-
-!!! Abstract ""
 	**注意：** nginx 默认以 nobody 用户身份运行，可能会遇到 403 的错误。可以授予 dist 目录访问权限，或者将 nginx 设置为 root 用户运行。
 
 ### 1.3 编译后端
@@ -88,8 +85,6 @@
 	```shell
 	mvn clean package
 	```
-
-!!! Abstract ""
 	**注意：** 在编译后端代码时如遇到依赖无法下载的问题，可以在百度网盘上下载一下最小化的 dataease 依赖包。链接: https://pan.baidu.com/s/1fWv_ze-QKUew3ND4NAdt8Q 提取码: rpzi
 
 ### 1.4 运行后端

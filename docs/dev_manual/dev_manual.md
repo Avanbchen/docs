@@ -16,13 +16,9 @@
 
 !!! Abstract ""
     **后端：**  
-    DataEase 后端使用了 Java 语言的 Spring Boot 框架，并使用 Maven 作为项目管理工具。开发者需要先在开发环境中安装 JDK 1.8 及 Maven。
-
-!!! Abstract ""
+    DataEase 后端使用了 Java 语言的 Spring Boot 框架，并使用 Maven 作为项目管理工具。开发者需要先在开发环境中安装 JDK 1.8 及 Maven。  
     **前端：**  
-    DataEase 前端使用了 Vue.js 作为前端框架，ElementUI 作为 UI 框架，并使用 npm 作为包管理工具。开发者请先下载 Node.js 作为运行环境，IDEA 用户建议安装 Vue.js 插件，便于开发。
-
-!!! Abstract ""
+    DataEase 前端使用了 Vue.js 作为前端框架，ElementUI 作为 UI 框架，并使用 npm 作为包管理工具。开发者请先下载 Node.js 作为运行环境，IDEA 用户建议安装 Vue.js 插件，便于开发。  
     **安装 npm:**  
     进入网站 https://nodejs.org/en/download/， 选择相应的安装包进行安装即可。
 
@@ -99,9 +95,7 @@
 
 !!! Abstract ""
     **Windows 下环境配置（可选）：**  
-    在 Windows 环境下对配置文件的路径会有所要求，一般可以采用下面两种配置方案里的一种，非 Windows 环境以下方案可跳过。
-
-!!! Abstract ""
+    在 Windows 环境下对配置文件的路径会有所要求，一般可以采用下面两种配置方案里的一种，非 Windows 环境以下方案可跳过。  
     **方案一(推荐)：**  
     将配置文件放置到工程源码的所在盘的指定路径下，以 dataease.properties 配置文件举例，如源码工程在 D 盘下，则配置文件存放路径为 d:\opt\dataease\conf\dataease.properties。其他配置文件类似。  
     此方案中不需要对 DataEase 的源码进行任何修改。

@@ -408,7 +408,7 @@
 	</tr>
 	<tr>
 		<td>
-			支持对数据源、数据集、视图、仪表板的维度进行数据权限控制； <span class="x-pack-span">X-Pack</span> <span class="new-span">New</span>
+			支持对数据源、数据集、视图、仪表板的维度进行数据权限控制； <span class="x-pack-span">X-Pack</span>
 		</td>
 	</tr>
 	<tr>
