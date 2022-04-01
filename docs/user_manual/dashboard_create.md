@@ -12,3 +12,10 @@
 	复用模版，按下图所示，选择系统内保存的模板，新建仪表板。
 
 ![新建仪表板_复用模版](../img/dashboard_generation/新建仪表板_复用模版.png){ width="900px" }
+
+## 3 导入模板
+
+!!! Abstract ""
+	如下图所示，选择【导入模板】，上传 .DET 模板文件，点击【确定】即可。
+
+![仪表板_导入模板](../img/dashboard_generation/仪表板_导入模板.png){ width="900px" }

@@ -38,6 +38,9 @@
 
 ![仪表板_创建公共链接_复制链接](../img/dashboard_generation/仪表板_创建公共链接_复制链接.png){ width="900px" }
 
+!!! Abstract ""
+	
+
 ## 4 保存为模板
 
 !!! Abstract ""
