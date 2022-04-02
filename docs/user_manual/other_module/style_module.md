@@ -18,3 +18,14 @@
 	用户在制作仪表板时，可通过选项卡展示多个视图，并通过切换查看。
 
 ![仪表盘编辑_其他组件](../../img/dashboard_generation/tab选项.png){ width="900px" }
+
+!!! Abstract ""
+	点击下图所示位置，通过 Tab 页展示一个视图。  
+	**提示：** Tab 页当前不支持展示仪表板。
+
+![Tab页展示视图](../../img/dashboard_generation/Tab页展示视图.png){ width="900px" }
+
+!!! Abstract ""
+	如下图所示，可设置 Tab 组件内部样式。
+
+![Tab页内部样式编辑](../../img/dashboard_generation/Tab页内部样式编辑.png){ width="900px" }

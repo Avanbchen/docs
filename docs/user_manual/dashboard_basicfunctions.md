@@ -77,3 +77,27 @@
 ![当前元素移入分布方式](../img/dashboard_generation/当前元素移入分布方式.png){ width="900px" }  
 ![元素为矩阵或悬浮](../../img/demo/tips/元素为矩阵或悬浮-单独修改元素.png){ width="900px" }
 
+## 6 外部参数设置
+
+!!! Abstract ""
+	点击下图按钮，弹出外部参数设置页面，外部参数设置步骤：
+
+	- 【序号 1】：启用外部参数；
+	- 【序号 2】：增加一个参数并命名，启用参数，可设置多个参数；
+	- 【序号 3】：配置联动视图与联动视图的字段；
+	- 【序号 4】：点击【确定】保存。
+
+![外部参数设置入口](../img/dashboard_generation/外部参数设置入口.png){ width="900px" }  
+![外部参数设置](../img/dashboard_generation/外部参数设置.png){ width="900" }
+
+!!! Abstract ""
+	**公共链接参数组装，对传参进行 base64 处理：**  
+	下图示例配置参数名为省份，关联了 “2021 年全国 GDP 数据” 仪表板中“今年上半年 GDP” 和 “GDP 前十强城市” 的 province 字段：
+	```shell
+	echo '{"省份":"北京市"}'|base64
+	```
+	参考仪表板使用的创建公共链接，启用公共链接分享，在公共链接后加上  ?attachParams= 加密后的字段，构建完整的 URL ：  
+	公共链接 + ?attachParams=eyLnnIHku70iOiLljJfkuqzluIIifQo=  
+	以公共链接的形式访问仪表板，关联的内容被过滤：
+
+![](../img/dashboard_generation/外部参数设置_效果预览.png){ width="900px" }

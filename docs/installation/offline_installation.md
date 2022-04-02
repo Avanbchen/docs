@@ -30,12 +30,17 @@
 	**注意：强烈建议不要将安装包的路径作为 DataEase 的安装目录，对日常的维护以及后续版本的升级会带来一些不必要的麻烦。**  
 
     从 v1.5.0 版本开始，DataEase 支持以配置文件的形式来设置安装参数，如安装目录、服务运行端口、数据库配置参数等，具体参数请参见安装包中的 install.conf 文件：
+    
+    **从 v1.9.0 版本开始，DataEase 支持多种部署模式，调整 install.conf 文件中 engine_mode 参数来设置不同的安装部署模式，engine_mode 可选值有 local、simple、cluster，分别对应本地模式、精简模式、集群模式。**  
+    v1.9.0 版本之前的版本，默认安装即为 local。
     ```properties
     # 基础配置
     ## 安装目录
     DE_BASE=/opt
     ## Service 端口
     DE_PORT=80
+    ## 部署及运行模式
+    DE_ENGINE_MODE=local
     
     # 数据库配置
     ## 是否使用外部数据库
