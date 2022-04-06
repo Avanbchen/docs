@@ -14,20 +14,25 @@
 
 ## 3 引擎设置
 
+### 3.1 精简模式
+
 !!! Abstract ""
-    精简模式下，需手动配置引擎的参数，目前仅支持 MySQL 数据库。精简模式部署，默认配置了 MySQL 组件，具体的参数可按下图示例：
+    精简模式下需配置数据引擎用以存储 Excel 及 API 数据集数据，目前该引擎只支持 MySQL 类型；  
+    可配置 DataEase 自带的 MySQL 组件，参考以下示例图，也可使用外部 MySQL 。
 
 ![MySQL设置](../../img/system_management/MySQL设置.png){ width="900" }
 
+### 3.2 集群模式
+
 !!! Abstract ""
-    集群模式下，需要手动配置 Doris 组件的参数。
+    集群模式下需要手动配置 Doris 组件的参数，用以存储 Excel 数据集，API 数据集数据和定时同步模式下数据集的数据。
 
 ![Doris设置](../../img/system_management/Doris设置.png){ width="900" }
 
 ## 4 Kettle 设置
 
 !!! Abstract ""
-    此项设置，只有在集群模式存在，集群模式可手动配置 Kettle 的基本信息，并可添加多个 kettle 组件。
+    集群模式下需配置 Kettle 组件用以做数据抽取，可手动配置 Kettle 的基本信息，并可添加多个 kettle 组件。
 
 ![Kettle设置](../../img/system_management/Kettle设置.png){ width="900" }  
 ![Kettle设置_编辑](../../img/system_management/Kettle设置_编辑.png){ width="900" }

@@ -21,7 +21,7 @@
 
 !!! Abstract ""
 	点击下图所示位置，通过 Tab 页展示一个视图。  
-	**提示：** Tab 页当前不支持展示仪表板。
+	**提示：** Tab 组件目前不支持同一 Tab 展示多个视图。
 
 ![Tab页展示视图](../../img/dashboard_generation/Tab页展示视图.png){ width="900px" }
 
