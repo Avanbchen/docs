@@ -429,7 +429,7 @@
 			显示设置
 		</td>
 		<td>
-			支持头部系统 Logo 、登录页 Logo 、登录页图片、登录页标题、系统名称等显示设置、移动端登录页面背景； <span class="x-pack-span">X-Pack</span>
+			支持头部系统 Logo 、登录页 Logo 、登录页图片、登录页标题、系统名称、移动端登录页面背景等显示设置； <span class="x-pack-span">X-Pack</span>
 		</td>
 	</tr>
 	<tr>
