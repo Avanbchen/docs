@@ -13,7 +13,7 @@
 ### 1.3 集群模式
 
 !!! Abstract ""
-    集群模式即 cluster 模式，cluster 模式下，Doris 组件与 Kettle 组件需用户自行安装；  
+    集群模式即 cluster 模式，cluster 模式下 Doris 组件与 Kettle 组件需用户自行安装；  
     Doris 安装部署可参考：http://doris.incubator.apache.org/zh-CN/ ，Kettle 安装部署可参考：http://www.kettle.org.cn/ ；  
     Kettle 组件与 Doris 组件的添加请参考【系统管理】的【系统参数】说明，集群模式下 Excel 数据集，API 数据集以及定时同步的数据通过 Kettle 抽取到 Doris 集群中。
 
