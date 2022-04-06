@@ -61,7 +61,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="36">
+		<td rowspan="38">
 			仪表板
 		</td>
 		<td rowspan="3">
@@ -91,22 +91,22 @@
 	</tr>
 	<tr>
 		<td>
-			支持仪表板中添加多种组件，例如：视图/时间组件/文本组件/数字组件/样式组件/图片/视频/ Tab 组件/链接等；
+			支持仪表板中添加多种组件，例如：视图/时间组件/文本组件/数字组件/样式组件/图片/视频/ Tab 组件/ Web 组件/链接等；
 		</td>
 	</tr>
 	<tr>
 		<td>
-			支持各类过滤组件，支持通过一个过滤组件过滤多个视图（视图数据可来自多个数据集）；
+			支持动态设置日期组件的默认值等；
 		</td>
 	</tr>
 	<tr>
 		<td>
-			支持时间过滤组件设置动态日期、时间；
+			支持通过一个过滤组件，过滤多个视图（视图数据来自多个数据集）；
 		</td>
 	</tr>
 	<tr>
 		<td>
-			支持组件样式设置，例如图形属性、组件样式等；
+			支持组件样式设置，例如颜色、大小、标签、标题、图例等；
 		</td>
 	</tr>
 	<tr>
@@ -121,12 +121,12 @@
 	</tr>
 	<tr>
 		<td>
-			支持仪表板中各组件背景图片及边框的设置；
+			支持仪表板中各组件背景图片、背景颜色、背景透明度、组件内边距、边框半径、边框样式等设置；
 		</td>
 	</tr>
 	<tr>
 		<td>
-			支持仪表板跳转，例如跳转至系统内其他仪表板、外部链接；
+			支持仪表板跳转，例如跳转至系统内其他仪表板、外部链接。支持视图跳转外部链接时传递点击参数给第三方；
 		</td>
 	</tr>
 	<tr>
@@ -175,7 +175,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="2">
+		<td rowspan="3">
 			仪表板共享
 		</td>
 		<td>
@@ -187,8 +187,13 @@
 			支持创建公共链接，外部用户可通过密码访问仪表板，同时分享链接支持设置过期时间；
 		</td>
 	</tr>
+    <tr>
+		<td>
+			支持公共链接接收第三方系统参数，过滤仪表板数据；
+		</td>
+	</tr>
 	<tr>
-		<td rowspan="13">
+		<td rowspan="14">
 			视图制作
 		</td>
         <td>
@@ -197,7 +202,7 @@
 	</tr>
 	<tr>
 		<td>
-			支持多种图表类型，明细表/汇总表/指标卡/透视表/基础柱状图/堆叠柱状图/横向柱状图/横向堆叠柱状图/基础折线图/堆叠折线图/饼图/南丁格尔玫瑰图/漏斗图/雷达图/仪表盘/中国地图/气泡地图/散点图/气泡图/矩形树图/组合图/水波图/瀑布图/词云图等；
+			支持多种图表类型，明细表/汇总表/指标卡/文本卡/透视表/基础柱状图/堆叠柱状图/横向柱状图/横向堆叠柱状图/基础折线图/堆叠折线图/饼图/南丁格尔玫瑰图/漏斗图/雷达图/仪表盘/中国地图/气泡地图/散点图/气泡图/矩形树图/组合图/水波图/瀑布图/词云图等；
 		</td>
 	</tr>
 	<tr>
@@ -205,6 +210,11 @@
 			支持对柱状图、折线图、等有纵坐标的图表，设置纵坐标起始和结束值范围；
 		</td>
 	</tr>
+    <tr>
+        <td>
+            支持柱状图和折线图设置缩略轴和辅助线；
+        </td>
+    </tr>
 	<tr>
 		<td>
 			支持视图数据集的切换；
@@ -252,7 +262,7 @@
 	</tr>
 	<tr>
 		<td >
-			支持为视图添加过滤器，通过组合条件筛选数据；
+			支持通过过滤条件筛选视图数据；
 		</td>
     </tr>
     <tr>
@@ -326,7 +336,7 @@
 			数据源管理
 		</td>
 		<td>
-			支持多种数据源，例如：多 Sheet 页的 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB / AWS RedShift / MariaDB / Doris / Hive / DB2 数据库/ API 数据源等；
+			支持多种数据源，例如：多 Sheet 页的 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB / AWS RedShift / MariaDB / Doris / Hive / DB2 数据库/ Impala / StarRocks / TiDB /API 数据源等；
 		</td>
 	</tr>
 	<tr>
@@ -350,7 +360,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="26">
+		<td rowspan="25">
 			系统管理
 		</td>
 		<td rowspan="3">
@@ -387,21 +397,16 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="6">
+		<td rowspan="5">
 			权限管理
 		</td>
 		<td>
-			支持从组织、角色、用户三个维度进行使用、管理、授权等形式的权限控制； <span class="x-pack-span">X-Pack</span>
+			支持从组织、角色、用户维度（组织架构维度）进行使用、管理、授权等形式的权限控制； <span class="x-pack-span">X-Pack</span>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			支持对数据源、数据集、视图、仪表板的维度进行数据权限控制； <span class="x-pack-span">X-Pack</span>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			支持从组织、角色、用户三个维度，对数据集进行“行列权限”的控制； <span class="x-pack-span">X-Pack</span>
+			支持从数据源、数据集、仪表板（资源维度）进行使用、管理、授权等形式的权限控制； <span class="x-pack-span">X-Pack</span>
 		</td>
 	</tr>
 	<tr>
@@ -411,7 +416,7 @@
 	</tr>
 	<tr>
 		<td>
-			支持数据集的行级权限控制； <span class="x-pack-span">X-Pack</span>
+			支持数据集的行级权限控制、支持行级权限使用系统内置变量（用户 ID、用户名、组织、邮箱等）； <span class="x-pack-span">X-Pack</span>
 		</td>
 	</tr>
     <tr>
@@ -424,7 +429,7 @@
 			显示设置
 		</td>
 		<td>
-			支持头部系统 Logo 、登录页 Logo 、登录页图片、登录页标题、系统名称等显示设置； <span class="x-pack-span">X-Pack</span>
+			支持头部系统 Logo 、登录页 Logo 、登录页图片、登录页标题、系统名称等显示设置、移动端登录页面背景； <span class="x-pack-span">X-Pack</span>
 		</td>
 	</tr>
 	<tr>
@@ -518,6 +523,33 @@
 			支持定时报告，可以定时以邮件形式发送仪表板报告。  <span class="x-pack-span">X-Pack</span>
 		</td>
 	</tr>
+    <tr>
+        <td rowspan="3">
+            安装模式
+        </td>
+        <td rowspan="1">
+            本地模式
+        </td>
+        <td>
+            支持一键 All in one 部署，自带 Doris 与 Kettle 组件；
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="1">
+            精简模式
+        </td>
+        <td>
+            支持精简模式部署，无需安装 Doris 与 Kettle，可另外配置 MySQL 引擎存放 Excel 与 API 数据集；
+        </td>
+    </tr>
+   <tr>
+        <td rowspan="1">
+            集群模式
+        </td>
+        <td>
+            支持集群模式部署，各组件可单独进行高可用部署，可在 DataEase 引擎设置与 Kettle 设置处配置组件链接信息。
+        </td>
+    </tr>
 </table>
 
 
