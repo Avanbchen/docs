@@ -91,13 +91,13 @@
 ![外部参数设置](../img/dashboard_generation/外部参数设置.png){ width="900" }
 
 !!! Abstract ""
-	**公共链接参数组装，对传参进行 base64 处理：**  
-	下图示例配置参数名为省份，关联了 “2021 年全国 GDP 数据” 仪表板中“今年上半年 GDP” 和 “GDP 前十强城市” 的 province 字段：
+	**公共链接参数组装，对传参进行 base64 处理，以下为示例：**  
+	配置参数名为"省份"，关联了 “2021 年全国 GDP 数据” 仪表板中“今年上半年 GDP” 和 “GDP 前十强城市” 的 province 字段，组装参数为 {"省份":"北京市"}，使用 base64 加密处理，该示例通过电脑终端进行，其它方式均可。
 	```shell
 	echo '{"省份":"北京市"}'|base64
 	```
-	参考仪表板使用的创建公共链接，启用公共链接分享，在公共链接后加上  ?attachParams= 加密后的字段，构建完整的 URL ：  
-	公共链接 + ?attachParams=eyLnnIHku70iOiLljJfkuqzluIIifQo=  
+	加密结果为：eyLnnIHku70iOiLljJfkuqzluIIifQo=  
+	在仪表板的公共链接后加上  ?attachParams=加密后的内容，构建完整的 URL：公共链接?attachParams=eyLnnIHku70iOiLljJfkuqzluIIifQo=  
 	以公共链接的形式访问仪表板，关联的内容被过滤：
 
 ![](../img/dashboard_generation/外部参数设置_效果预览.png){ width="900px" }
