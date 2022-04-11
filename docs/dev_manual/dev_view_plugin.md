@@ -142,12 +142,12 @@
     ```shell
     mvn clean package
     ```
-    得到 view-3dpie-backend-1.0-SNAPSHOT.jar 。
+    得到 view-3dpie-backend-1.0-SNAPSHOT.jar 与插件描述文件一起打包成 zip 格式。
 
 ![package](../img/dev_manual/package.png){ width="900px" }
 
 !!! Abstract ""
-    与插件描述文件一起打包成 zip 格式，插件描述文件格式如下：
+    插件描述文件格式如下：
     ```json
     {
         "name": "xxxx 视图插件",
@@ -195,7 +195,7 @@
         <td>
             插件类别
     </tr>
-、    <tr>
+    <tr>
         <td>
             descript
         <td>
