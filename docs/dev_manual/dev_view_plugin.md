@@ -36,8 +36,8 @@
 
 !!! Abstract ""
     **下面以 highcharts 中 3D 饼图为例，详细描述如何使用插件框架开发一个 3D 饼图：**  
-    使用 IDEA 工具创建 Maven 工程名称为 view-3dpie，删除 src，修改 pom.xml 并增加如下配置。  
-    **提示：** 创建的 demo 工程可以是独立的，不一定要在框架源码中创建。
+    使用 IDEA 在框架源码中创建 Maven 工程名称为 view-3dpie，删除 src，修改 pom.xml 并增加如下配置。  
+    **提示：** 创建的 demo 工程可以是独立的。
 
 ![demo-pom](../img/dev_manual/demo-pom.png){ width="900px" }
 
@@ -58,7 +58,7 @@
 ![maven](../img/dev_manual/maven.png){ width="900px" }
 
 !!! Abstract ""
-    **修改 view-3dpie/pom.xml 建立父子级关系，注意一定是 frontend 在前。**
+    **修改 view-3dpie/pom.xml 建立父子级关系，注意是 frontend 在前。**
 
 ![view-3dpie-pom2](../img/dev_manual/view-3dpie-pom2.png){ width="900px" }
 
@@ -164,17 +164,76 @@
     }
     ```
 
-| name     | 插件名称（保证唯一）     |
-|:---------|:---------------|
-| store    | 您的公司名称         |
-| free     | 是否免费           |
-| cost     | 多少钱            |
-| category | 插件类别           |
-| descript | 描述             |
-| version  | 版本对应的后台工程版本    |
-| creator  | 作者             |
-| moduleName | 模块名称对应后台工程模块名称 |
-| require  | 要求 DataEase 最低版本 |
+<table>
+    <tr>
+        <td>
+            name
+        <td>
+            插件名称（保证唯一）
+    </tr>
+    <tr>
+        <td>
+            store
+        <td>
+            您的公司名称
+    </tr>
+    <tr>
+        <td>
+            free
+        <td>
+            是否免费
+    </tr>
+    <tr>
+        <td>
+            cost
+        <td>
+            多少钱
+    </tr>
+    <tr>
+        <td>
+            category
+        <td>
+            插件类别
+    </tr>
+、    <tr>
+        <td>
+            descript
+        <td>
+            描述
+    </tr>
+    <tr>
+        <td>
+            version
+        <td>
+            版本对应的后台工程版本
+    </tr>
+    <tr>
+        <td>
+            creator
+        <td>
+            作者
+    </tr>
+    <tr>
+        <td>
+            loadMybatis
+        </td>
+        <td>
+            是否使用 Mybatis
+        </td>
+    </tr>
+    <tr>
+        <td>
+            moduleName
+        <td>
+            模块名称对应后台工程模块名称
+    </tr>
+    <tr>
+        <td>
+            require
+        <td>
+            要求 DataEase 最低版本
+    </tr>
+</table>
 
 ### 2.5 安装插件
 
